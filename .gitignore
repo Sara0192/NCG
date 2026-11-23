@@ -1,0 +1,29 @@
+# Salidas locales: no subir las versiones compiladas al repositorio
+*.syso
+/dist/
+/release/
+/signed/
+/NCG_V*.exe
+/NCG_Neutralino_Alternativo.exe
+*.pfx
+*.p12
+*.pvk
+*.key
+.env
+__pycache__/
+*.pyc
+
+# Guardados y claves, nunca versionar
+/Guardados/
+/Respaldos/
+/partida.json
+/historial.json
+*.pem
+*.p8
+*.p7b
+*.p7c
+*.pfx
+*.p12
+*.key
+*.kdbx
+secrets.*

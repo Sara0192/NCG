@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Subir a SignPath como configuracion de artefacto. GitHub upload-artifact@v7
+     crea un archivo ZIP conteniendo el exe de NCG. -->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <pe-file path="NCG_V18_36_15.exe" product-name="NCG"
+             product-version="18.36.15.0" file-version="18.36.15.0"
+             company-name="NCG" original-filename="NCG_V18_36_15.exe">
+      <authenticode-sign />
+    </pe-file>
+  </zip-file>
+</artifact-configuration>
