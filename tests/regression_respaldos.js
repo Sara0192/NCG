@@ -1,0 +1,17 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const guard=fs.readFileSync('resources/js/guardado.js','utf8');
+const context=vm.createContext({console});vm.runInContext(guard,context);
+const sanitize=context.sanitizeImportedRecord;
+assert.equal(sanitize({a:1}).a,1);
+assert.throws(()=>sanitize({a:Array.from({length:30},()=>Array(500).fill(1))}),/12000/);
+assert.throws(()=>sanitize(JSON.parse('{"a":'.repeat(14)+'0'+'}'.repeat(14))),/profundidad/);
+assert.equal(Object.getPrototypeOf(sanitize(JSON.parse('{"__proto__":{"x":1},"x":2}'))),null);
+assert.equal(sanitize(JSON.parse('{"__proto__":{"x":1},"x":2}')).__proto__,undefined);
+const files={'/data/NCG/progreso-v17.json':'{broken','/data/NCG/progreso-v17-anterior.json':'{bad', '/data/NCG/autocopia-01.json':JSON.stringify({'ncg_v6_history':'[]','ncg_v6_session':'{}','ncg_v646_campaign_days':'{}'})};
+const missing=()=>{throw Error('not found');};
+const nw={filesystem:{createDirectory:async()=>{},readDirectory:async()=>[],readFile:async f=>files[f]??missing(),writeFile:async(f,d)=>{files[f]=d;},move:async(a,b)=>{files[b]=files[a];}}};
+let boot=fs.readFileSync('resources/js/desktop_boot.js','utf8');
+boot=boot.replace("if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();",'window.__test={readData,values,recovered:()=>recovered};');
+const sandbox={window:{},document:{getElementById:()=>null},Neutralino:nw,NL_DATAPATH:'/data',console,setTimeout,clearTimeout};vm.createContext(sandbox);vm.runInContext(boot,sandbox);
+(async()=>{await sandbox.window.__test.readData();assert.equal(sandbox.window.__test.recovered(),true);assert.equal(sandbox.window.__test.values.get('ncg_v6_history'),'[]');console.log('RESPALDOS OK: límite, profundidad, claves peligrosas y recuperación desde autocopia.');})().catch(e=>{console.error(e);process.exit(1)});

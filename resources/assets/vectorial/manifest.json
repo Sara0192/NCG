@@ -1,0 +1,4136 @@
+{
+  "coins": 129,
+  "images": 516,
+  "errors": [],
+  "bytes": 13039676,
+  "manifest": [
+    {
+      "id": "8_escudos_Carlos_IV_1806",
+      "side": 0,
+      "image": "alta/8_escudos_Carlos_IV_1806_anverso.webp",
+      "bytes": 41022,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_Carlos_IV_1806",
+      "side": 0,
+      "image": "ligera/8_escudos_Carlos_IV_1806_anverso.webp",
+      "bytes": 8862,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_Carlos_IV_1806",
+      "side": 1,
+      "image": "alta/8_escudos_Carlos_IV_1806_reverso.webp",
+      "bytes": 45824,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_Carlos_IV_1806",
+      "side": 1,
+      "image": "ligera/8_escudos_Carlos_IV_1806_reverso.webp",
+      "bytes": 9690,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_elephante_Cesar",
+      "side": 0,
+      "image": "alta/denario_elephante_Cesar_anverso.webp",
+      "bytes": 31688,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_elephante_Cesar",
+      "side": 0,
+      "image": "ligera/denario_elephante_Cesar_anverso.webp",
+      "bytes": 6424,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_elephante_Cesar",
+      "side": 1,
+      "image": "alta/denario_elephante_Cesar_reverso.webp",
+      "bytes": 25596,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_elephante_Cesar",
+      "side": 1,
+      "image": "ligera/denario_elephante_Cesar_reverso.webp",
+      "bytes": 5532,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_Filipinas_1897",
+      "side": 0,
+      "image": "alta/peso_Filipinas_1897_anverso.webp",
+      "bytes": 36662,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_Filipinas_1897",
+      "side": 0,
+      "image": "ligera/peso_Filipinas_1897_anverso.webp",
+      "bytes": 7882,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_Filipinas_1897",
+      "side": 1,
+      "image": "alta/peso_Filipinas_1897_reverso.webp",
+      "bytes": 44520,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_Filipinas_1897",
+      "side": 1,
+      "image": "ligera/peso_Filipinas_1897_reverso.webp",
+      "bytes": 9440,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_centavos_Puerto_Rico_1895",
+      "side": 0,
+      "image": "alta/20_centavos_Puerto_Rico_1895_anverso.webp",
+      "bytes": 36872,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_centavos_Puerto_Rico_1895",
+      "side": 0,
+      "image": "ligera/20_centavos_Puerto_Rico_1895_anverso.webp",
+      "bytes": 7966,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_centavos_Puerto_Rico_1895",
+      "side": 1,
+      "image": "alta/20_centavos_Puerto_Rico_1895_reverso.webp",
+      "bytes": 46962,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_centavos_Puerto_Rico_1895",
+      "side": 1,
+      "image": "ligera/20_centavos_Puerto_Rico_1895_reverso.webp",
+      "bytes": 9802,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_macuquina_Carlos_II",
+      "side": 0,
+      "image": "alta/8_reales_macuquina_Carlos_II_anverso.webp",
+      "bytes": 34794,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_macuquina_Carlos_II",
+      "side": 0,
+      "image": "ligera/8_reales_macuquina_Carlos_II_anverso.webp",
+      "bytes": 7812,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_macuquina_Carlos_II",
+      "side": 1,
+      "image": "alta/8_reales_macuquina_Carlos_II_reverso.webp",
+      "bytes": 33862,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_macuquina_Carlos_II",
+      "side": 1,
+      "image": "ligera/8_reales_macuquina_Carlos_II_reverso.webp",
+      "bytes": 7250,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_maravedis_Felipe_IV_1624",
+      "side": 0,
+      "image": "alta/8_maravedis_Felipe_IV_1624_anverso.webp",
+      "bytes": 35016,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_maravedis_Felipe_IV_1624",
+      "side": 0,
+      "image": "ligera/8_maravedis_Felipe_IV_1624_anverso.webp",
+      "bytes": 7714,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_maravedis_Felipe_IV_1624",
+      "side": 1,
+      "image": "alta/8_maravedis_Felipe_IV_1624_reverso.webp",
+      "bytes": 38618,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_maravedis_Felipe_IV_1624",
+      "side": 1,
+      "image": "ligera/8_maravedis_Felipe_IV_1624_reverso.webp",
+      "bytes": 8338,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1877",
+      "side": 0,
+      "image": "alta/trade_dollar_1877_anverso.webp",
+      "bytes": 35462,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1877",
+      "side": 0,
+      "image": "ligera/trade_dollar_1877_anverso.webp",
+      "bytes": 7612,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1877",
+      "side": 1,
+      "image": "alta/trade_dollar_1877_reverso.webp",
+      "bytes": 47826,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1877",
+      "side": 1,
+      "image": "ligera/trade_dollar_1877_reverso.webp",
+      "bytes": 9616,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "india_rupee_1840",
+      "side": 0,
+      "image": "alta/india_rupee_1840_anverso.webp",
+      "bytes": 35900,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "india_rupee_1840",
+      "side": 0,
+      "image": "ligera/india_rupee_1840_anverso.webp",
+      "bytes": 7786,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "india_rupee_1840",
+      "side": 1,
+      "image": "alta/india_rupee_1840_reverso.webp",
+      "bytes": 47596,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "india_rupee_1840",
+      "side": 1,
+      "image": "ligera/india_rupee_1840_reverso.webp",
+      "bytes": 9846,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_5fr_1873",
+      "side": 0,
+      "image": "alta/france_5fr_1873_anverso.webp",
+      "bytes": 36350,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_5fr_1873",
+      "side": 0,
+      "image": "ligera/france_5fr_1873_anverso.webp",
+      "bytes": 7800,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_5fr_1873",
+      "side": 1,
+      "image": "alta/france_5fr_1873_reverso.webp",
+      "bytes": 40372,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_5fr_1873",
+      "side": 1,
+      "image": "ligera/france_5fr_1873_reverso.webp",
+      "bytes": 8418,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "prussia_5marks_1901",
+      "side": 0,
+      "image": "alta/prussia_5marks_1901_anverso.webp",
+      "bytes": 38556,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "prussia_5marks_1901",
+      "side": 0,
+      "image": "ligera/prussia_5marks_1901_anverso.webp",
+      "bytes": 8166,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "prussia_5marks_1901",
+      "side": 1,
+      "image": "alta/prussia_5marks_1901_reverso.webp",
+      "bytes": 47992,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "prussia_5marks_1901",
+      "side": 1,
+      "image": "ligera/prussia_5marks_1901_reverso.webp",
+      "bytes": 9982,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "austria_thaler_1780",
+      "side": 0,
+      "image": "alta/austria_thaler_1780_anverso.webp",
+      "bytes": 33500,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "austria_thaler_1780",
+      "side": 0,
+      "image": "ligera/austria_thaler_1780_anverso.webp",
+      "bytes": 7406,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "austria_thaler_1780",
+      "side": 1,
+      "image": "alta/austria_thaler_1780_reverso.webp",
+      "bytes": 42786,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "austria_thaler_1780",
+      "side": 1,
+      "image": "ligera/austria_thaler_1780_reverso.webp",
+      "bytes": 8860,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_20fr_1868",
+      "side": 0,
+      "image": "alta/france_20fr_1868_anverso.webp",
+      "bytes": 47034,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_20fr_1868",
+      "side": 0,
+      "image": "ligera/france_20fr_1868_anverso.webp",
+      "bytes": 9420,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_20fr_1868",
+      "side": 1,
+      "image": "alta/france_20fr_1868_reverso.webp",
+      "bytes": 43852,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "france_20fr_1868",
+      "side": 1,
+      "image": "ligera/france_20fr_1868_reverso.webp",
+      "bytes": 9070,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "britain_crown_1887",
+      "side": 0,
+      "image": "alta/britain_crown_1887_anverso.webp",
+      "bytes": 41504,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "britain_crown_1887",
+      "side": 0,
+      "image": "ligera/britain_crown_1887_anverso.webp",
+      "bytes": 8550,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "britain_crown_1887",
+      "side": 1,
+      "image": "alta/britain_crown_1887_reverso.webp",
+      "bytes": 40652,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "britain_crown_1887",
+      "side": 1,
+      "image": "ligera/britain_crown_1887_reverso.webp",
+      "bytes": 8448,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "us_indian_cent_1901",
+      "side": 0,
+      "image": "alta/us_indian_cent_1901_anverso.webp",
+      "bytes": 39324,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "us_indian_cent_1901",
+      "side": 0,
+      "image": "ligera/us_indian_cent_1901_anverso.webp",
+      "bytes": 8680,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "us_indian_cent_1901",
+      "side": 1,
+      "image": "alta/us_indian_cent_1901_reverso.webp",
+      "bytes": 40310,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "us_indian_cent_1901",
+      "side": 1,
+      "image": "ligera/us_indian_cent_1901_reverso.webp",
+      "bytes": 8350,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "byzantium_solidus_justinian",
+      "side": 0,
+      "image": "alta/byzantium_solidus_justinian_anverso.webp",
+      "bytes": 38056,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "byzantium_solidus_justinian",
+      "side": 0,
+      "image": "ligera/byzantium_solidus_justinian_anverso.webp",
+      "bytes": 8352,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "byzantium_solidus_justinian",
+      "side": 1,
+      "image": "alta/byzantium_solidus_justinian_reverso.webp",
+      "bytes": 38150,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "byzantium_solidus_justinian",
+      "side": 1,
+      "image": "ligera/byzantium_solidus_justinian_reverso.webp",
+      "bytes": 8044,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "athens_tetradrachm",
+      "side": 0,
+      "image": "alta/athens_tetradrachm_anverso.webp",
+      "bytes": 29602,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "athens_tetradrachm",
+      "side": 0,
+      "image": "ligera/athens_tetradrachm_anverso.webp",
+      "bytes": 6390,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "athens_tetradrachm",
+      "side": 1,
+      "image": "alta/athens_tetradrachm_reverso.webp",
+      "bytes": 34978,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "athens_tetradrachm",
+      "side": 1,
+      "image": "ligera/athens_tetradrachm_reverso.webp",
+      "bytes": 7120,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "aureo_adriano",
+      "side": 0,
+      "image": "alta/aureo_adriano_anverso.webp",
+      "bytes": 36846,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "aureo_adriano",
+      "side": 0,
+      "image": "ligera/aureo_adriano_anverso.webp",
+      "bytes": 8016,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "aureo_adriano",
+      "side": 1,
+      "image": "alta/aureo_adriano_reverso.webp",
+      "bytes": 31540,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "aureo_adriano",
+      "side": 1,
+      "image": "ligera/aureo_adriano_reverso.webp",
+      "bytes": 6874,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1873s",
+      "side": 0,
+      "image": "alta/trade_dollar_1873s_anverso.webp",
+      "bytes": 35760,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1873s",
+      "side": 0,
+      "image": "ligera/trade_dollar_1873s_anverso.webp",
+      "bytes": 7772,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1873s",
+      "side": 1,
+      "image": "alta/trade_dollar_1873s_reverso.webp",
+      "bytes": 49442,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "trade_dollar_1873s",
+      "side": 1,
+      "image": "ligera/trade_dollar_1873s_reverso.webp",
+      "bytes": 10070,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "guinea_jorge_i_1717",
+      "side": 0,
+      "image": "alta/guinea_jorge_i_1717_anverso.webp",
+      "bytes": 41644,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "guinea_jorge_i_1717",
+      "side": 0,
+      "image": "ligera/guinea_jorge_i_1717_anverso.webp",
+      "bytes": 9024,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "guinea_jorge_i_1717",
+      "side": 1,
+      "image": "alta/guinea_jorge_i_1717_reverso.webp",
+      "bytes": 44054,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "guinea_jorge_i_1717",
+      "side": 1,
+      "image": "ligera/guinea_jorge_i_1717_reverso.webp",
+      "bytes": 9200,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "yen_meiji_22_1889",
+      "side": 0,
+      "image": "alta/yen_meiji_22_1889_anverso.webp",
+      "bytes": 71532,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "yen_meiji_22_1889",
+      "side": 0,
+      "image": "ligera/yen_meiji_22_1889_anverso.webp",
+      "bytes": 12002,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "yen_meiji_22_1889",
+      "side": 1,
+      "image": "alta/yen_meiji_22_1889_reverso.webp",
+      "bytes": 50294,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "yen_meiji_22_1889",
+      "side": 1,
+      "image": "ligera/yen_meiji_22_1889_reverso.webp",
+      "bytes": 9488,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge_v_1911",
+      "side": 0,
+      "image": "alta/soberano_jorge_v_1911_anverso.webp",
+      "bytes": 42696,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge_v_1911",
+      "side": 0,
+      "image": "ligera/soberano_jorge_v_1911_anverso.webp",
+      "bytes": 8940,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge_v_1911",
+      "side": 1,
+      "image": "alta/soberano_jorge_v_1911_reverso.webp",
+      "bytes": 41600,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge_v_1911",
+      "side": 1,
+      "image": "ligera/soberano_jorge_v_1911_reverso.webp",
+      "bytes": 8752,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centimo_alfonso_xii_1878",
+      "side": 0,
+      "image": "alta/centimo_alfonso_xii_1878_anverso.webp",
+      "bytes": 38616,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centimo_alfonso_xii_1878",
+      "side": 0,
+      "image": "ligera/centimo_alfonso_xii_1878_anverso.webp",
+      "bytes": 8474,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centimo_alfonso_xii_1878",
+      "side": 1,
+      "image": "alta/centimo_alfonso_xii_1878_reverso.webp",
+      "bytes": 45888,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centimo_alfonso_xii_1878",
+      "side": 1,
+      "image": "ligera/centimo_alfonso_xii_1878_reverso.webp",
+      "bytes": 9604,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "real_reyes_catolicos_1497",
+      "side": 0,
+      "image": "alta/real_reyes_catolicos_1497_anverso.webp",
+      "bytes": 34218,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "real_reyes_catolicos_1497",
+      "side": 0,
+      "image": "ligera/real_reyes_catolicos_1497_anverso.webp",
+      "bytes": 7364,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "real_reyes_catolicos_1497",
+      "side": 1,
+      "image": "alta/real_reyes_catolicos_1497_reverso.webp",
+      "bytes": 29078,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "real_reyes_catolicos_1497",
+      "side": 1,
+      "image": "ligera/real_reyes_catolicos_1497_reverso.webp",
+      "bytes": 6036,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_amadeo_1871",
+      "side": 0,
+      "image": "alta/5_pesetas_amadeo_1871_anverso.webp",
+      "bytes": 38550,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_amadeo_1871",
+      "side": 0,
+      "image": "ligera/5_pesetas_amadeo_1871_anverso.webp",
+      "bytes": 8060,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_amadeo_1871",
+      "side": 1,
+      "image": "alta/5_pesetas_amadeo_1871_reverso.webp",
+      "bytes": 44432,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_amadeo_1871",
+      "side": 1,
+      "image": "ligera/5_pesetas_amadeo_1871_reverso.webp",
+      "bytes": 9600,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_real_carlos_iii_1765",
+      "side": 0,
+      "image": "alta/medio_real_carlos_iii_1765_anverso.webp",
+      "bytes": 38656,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_real_carlos_iii_1765",
+      "side": 0,
+      "image": "ligera/medio_real_carlos_iii_1765_anverso.webp",
+      "bytes": 8318,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_real_carlos_iii_1765",
+      "side": 1,
+      "image": "alta/medio_real_carlos_iii_1765_reverso.webp",
+      "bytes": 44218,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_real_carlos_iii_1765",
+      "side": 1,
+      "image": "ligera/medio_real_carlos_iii_1765_reverso.webp",
+      "bytes": 8714,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "vreneli_20fr_1899",
+      "side": 0,
+      "image": "alta/vreneli_20fr_1899_anverso.webp",
+      "bytes": 39448,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "vreneli_20fr_1899",
+      "side": 0,
+      "image": "ligera/vreneli_20fr_1899_anverso.webp",
+      "bytes": 8394,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "vreneli_20fr_1899",
+      "side": 1,
+      "image": "alta/vreneli_20fr_1899_reverso.webp",
+      "bytes": 36726,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "vreneli_20fr_1899",
+      "side": 1,
+      "image": "ligera/vreneli_20fr_1899_reverso.webp",
+      "bytes": 7890,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_m_marcius_134ac",
+      "side": 0,
+      "image": "alta/denario_m_marcius_134ac_anverso.webp",
+      "bytes": 30008,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_m_marcius_134ac",
+      "side": 0,
+      "image": "ligera/denario_m_marcius_134ac_anverso.webp",
+      "bytes": 6424,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_m_marcius_134ac",
+      "side": 1,
+      "image": "alta/denario_m_marcius_134ac_reverso.webp",
+      "bytes": 30422,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_m_marcius_134ac",
+      "side": 1,
+      "image": "ligera/denario_m_marcius_134ac_reverso.webp",
+      "bytes": 6336,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_caballito_1910",
+      "side": 0,
+      "image": "alta/peso_caballito_1910_anverso.webp",
+      "bytes": 48624,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_caballito_1910",
+      "side": 0,
+      "image": "ligera/peso_caballito_1910_anverso.webp",
+      "bytes": 10054,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_caballito_1910",
+      "side": 1,
+      "image": "alta/peso_caballito_1910_reverso.webp",
+      "bytes": 38276,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "peso_caballito_1910",
+      "side": 1,
+      "image": "ligera/peso_caballito_1910_reverso.webp",
+      "bytes": 7724,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos_iv_mexico_1796",
+      "side": 0,
+      "image": "alta/8_reales_carlos_iv_mexico_1796_anverso.webp",
+      "bytes": 36802,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos_iv_mexico_1796",
+      "side": 0,
+      "image": "ligera/8_reales_carlos_iv_mexico_1796_anverso.webp",
+      "bytes": 7974,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos_iv_mexico_1796",
+      "side": 1,
+      "image": "alta/8_reales_carlos_iv_mexico_1796_reverso.webp",
+      "bytes": 43200,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos_iv_mexico_1796",
+      "side": 1,
+      "image": "ligera/8_reales_carlos_iv_mexico_1796_reverso.webp",
+      "bytes": 9116,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_carlos3_1786",
+      "side": 0,
+      "image": "alta/8_escudos_carlos3_1786_anverso.webp",
+      "bytes": 41310,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_carlos3_1786",
+      "side": 0,
+      "image": "ligera/8_escudos_carlos3_1786_anverso.webp",
+      "bytes": 8860,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_carlos3_1786",
+      "side": 1,
+      "image": "alta/8_escudos_carlos3_1786_reverso.webp",
+      "bytes": 46874,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_escudos_carlos3_1786",
+      "side": 1,
+      "image": "ligera/8_escudos_carlos3_1786_reverso.webp",
+      "bytes": 9680,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_carlos4_1798",
+      "side": 0,
+      "image": "alta/4_escudos_carlos4_1798_anverso.webp",
+      "bytes": 41260,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_carlos4_1798",
+      "side": 0,
+      "image": "ligera/4_escudos_carlos4_1798_anverso.webp",
+      "bytes": 8956,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_carlos4_1798",
+      "side": 1,
+      "image": "alta/4_escudos_carlos4_1798_reverso.webp",
+      "bytes": 46382,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_carlos4_1798",
+      "side": 1,
+      "image": "ligera/4_escudos_carlos4_1798_reverso.webp",
+      "bytes": 9712,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_escudos_fernando7_1817",
+      "side": 0,
+      "image": "alta/2_escudos_fernando7_1817_anverso.webp",
+      "bytes": 42004,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_escudos_fernando7_1817",
+      "side": 0,
+      "image": "ligera/2_escudos_fernando7_1817_anverso.webp",
+      "bytes": 8968,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_escudos_fernando7_1817",
+      "side": 1,
+      "image": "alta/2_escudos_fernando7_1817_reverso.webp",
+      "bytes": 46884,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_escudos_fernando7_1817",
+      "side": 1,
+      "image": "ligera/2_escudos_fernando7_1817_reverso.webp",
+      "bytes": 9846,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_escudo_carlos4_1791",
+      "side": 0,
+      "image": "alta/1_escudo_carlos4_1791_anverso.webp",
+      "bytes": 41308,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_escudo_carlos4_1791",
+      "side": 0,
+      "image": "ligera/1_escudo_carlos4_1791_anverso.webp",
+      "bytes": 8932,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_escudo_carlos4_1791",
+      "side": 1,
+      "image": "alta/1_escudo_carlos4_1791_reverso.webp",
+      "bytes": 46000,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_escudo_carlos4_1791",
+      "side": 1,
+      "image": "ligera/1_escudo_carlos4_1791_reverso.webp",
+      "bytes": 9670,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos3_1772_columnaria",
+      "side": 0,
+      "image": "alta/8_reales_carlos3_1772_columnaria_anverso.webp",
+      "bytes": 37180,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos3_1772_columnaria",
+      "side": 0,
+      "image": "ligera/8_reales_carlos3_1772_columnaria_anverso.webp",
+      "bytes": 8064,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos3_1772_columnaria",
+      "side": 1,
+      "image": "alta/8_reales_carlos3_1772_columnaria_reverso.webp",
+      "bytes": 43006,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_carlos3_1772_columnaria",
+      "side": 1,
+      "image": "ligera/8_reales_carlos3_1772_columnaria_reverso.webp",
+      "bytes": 9044,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_carlos4_1803",
+      "side": 0,
+      "image": "alta/2_reales_carlos4_1803_anverso.webp",
+      "bytes": 37202,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_carlos4_1803",
+      "side": 0,
+      "image": "ligera/2_reales_carlos4_1803_anverso.webp",
+      "bytes": 8090,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_carlos4_1803",
+      "side": 1,
+      "image": "alta/2_reales_carlos4_1803_reverso.webp",
+      "bytes": 41204,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_carlos4_1803",
+      "side": 1,
+      "image": "ligera/2_reales_carlos4_1803_reverso.webp",
+      "bytes": 9026,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_fernando7_1820",
+      "side": 0,
+      "image": "alta/4_reales_fernando7_1820_anverso.webp",
+      "bytes": 38096,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_fernando7_1820",
+      "side": 0,
+      "image": "ligera/4_reales_fernando7_1820_anverso.webp",
+      "bytes": 8298,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_fernando7_1820",
+      "side": 1,
+      "image": "alta/4_reales_fernando7_1820_reverso.webp",
+      "bytes": 41218,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_fernando7_1820",
+      "side": 1,
+      "image": "ligera/4_reales_fernando7_1820_reverso.webp",
+      "bytes": 9020,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_fernando7_1824",
+      "side": 0,
+      "image": "alta/1_real_fernando7_1824_anverso.webp",
+      "bytes": 37636,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_fernando7_1824",
+      "side": 0,
+      "image": "ligera/1_real_fernando7_1824_anverso.webp",
+      "bytes": 8208,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_fernando7_1824",
+      "side": 1,
+      "image": "alta/1_real_fernando7_1824_reverso.webp",
+      "bytes": 41992,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_fernando7_1824",
+      "side": 1,
+      "image": "ligera/1_real_fernando7_1824_reverso.webp",
+      "bytes": 9088,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_reales_isabel2_1850",
+      "side": 0,
+      "image": "alta/20_reales_isabel2_1850_anverso.webp",
+      "bytes": 38748,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_reales_isabel2_1850",
+      "side": 0,
+      "image": "ligera/20_reales_isabel2_1850_anverso.webp",
+      "bytes": 8244,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_reales_isabel2_1850",
+      "side": 1,
+      "image": "alta/20_reales_isabel2_1850_reverso.webp",
+      "bytes": 40168,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_reales_isabel2_1850",
+      "side": 1,
+      "image": "ligera/20_reales_isabel2_1850_reverso.webp",
+      "bytes": 8664,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_reales_isabel2_1855",
+      "side": 0,
+      "image": "alta/10_reales_isabel2_1855_anverso.webp",
+      "bytes": 37646,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_reales_isabel2_1855",
+      "side": 0,
+      "image": "ligera/10_reales_isabel2_1855_anverso.webp",
+      "bytes": 8188,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_reales_isabel2_1855",
+      "side": 1,
+      "image": "alta/10_reales_isabel2_1855_reverso.webp",
+      "bytes": 44992,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_reales_isabel2_1855",
+      "side": 1,
+      "image": "ligera/10_reales_isabel2_1855_reverso.webp",
+      "bytes": 8956,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_isabel2_1860",
+      "side": 0,
+      "image": "alta/4_reales_isabel2_1860_anverso.webp",
+      "bytes": 38480,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_isabel2_1860",
+      "side": 0,
+      "image": "ligera/4_reales_isabel2_1860_anverso.webp",
+      "bytes": 8276,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_isabel2_1860",
+      "side": 1,
+      "image": "alta/4_reales_isabel2_1860_reverso.webp",
+      "bytes": 40886,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_reales_isabel2_1860",
+      "side": 1,
+      "image": "ligera/4_reales_isabel2_1860_reverso.webp",
+      "bytes": 8620,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_isabel2_1862",
+      "side": 0,
+      "image": "alta/2_reales_isabel2_1862_anverso.webp",
+      "bytes": 38204,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_isabel2_1862",
+      "side": 0,
+      "image": "ligera/2_reales_isabel2_1862_anverso.webp",
+      "bytes": 8188,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_isabel2_1862",
+      "side": 1,
+      "image": "alta/2_reales_isabel2_1862_reverso.webp",
+      "bytes": 40548,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_reales_isabel2_1862",
+      "side": 1,
+      "image": "ligera/2_reales_isabel2_1862_reverso.webp",
+      "bytes": 8656,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_isabel2_1858",
+      "side": 0,
+      "image": "alta/1_real_isabel2_1858_anverso.webp",
+      "bytes": 38228,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_isabel2_1858",
+      "side": 0,
+      "image": "ligera/1_real_isabel2_1858_anverso.webp",
+      "bytes": 8170,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_isabel2_1858",
+      "side": 1,
+      "image": "alta/1_real_isabel2_1858_reverso.webp",
+      "bytes": 40294,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_real_isabel2_1858",
+      "side": 1,
+      "image": "ligera/1_real_isabel2_1858_reverso.webp",
+      "bytes": 8608,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_escudos_isabel2_1865",
+      "side": 0,
+      "image": "alta/10_escudos_isabel2_1865_anverso.webp",
+      "bytes": 42708,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_escudos_isabel2_1865",
+      "side": 0,
+      "image": "ligera/10_escudos_isabel2_1865_anverso.webp",
+      "bytes": 9010,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_escudos_isabel2_1865",
+      "side": 1,
+      "image": "alta/10_escudos_isabel2_1865_reverso.webp",
+      "bytes": 47710,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_escudos_isabel2_1865",
+      "side": 1,
+      "image": "ligera/10_escudos_isabel2_1865_reverso.webp",
+      "bytes": 10036,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_isabel2_1867",
+      "side": 0,
+      "image": "alta/4_escudos_isabel2_1867_anverso.webp",
+      "bytes": 42962,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_isabel2_1867",
+      "side": 0,
+      "image": "ligera/4_escudos_isabel2_1867_anverso.webp",
+      "bytes": 9184,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_isabel2_1867",
+      "side": 1,
+      "image": "alta/4_escudos_isabel2_1867_reverso.webp",
+      "bytes": 48084,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_escudos_isabel2_1867",
+      "side": 1,
+      "image": "ligera/4_escudos_isabel2_1867_reverso.webp",
+      "bytes": 10046,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_provisional_1870",
+      "side": 0,
+      "image": "alta/5_pesetas_provisional_1870_anverso.webp",
+      "bytes": 39952,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_provisional_1870",
+      "side": 0,
+      "image": "ligera/5_pesetas_provisional_1870_anverso.webp",
+      "bytes": 8382,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_provisional_1870",
+      "side": 1,
+      "image": "alta/5_pesetas_provisional_1870_reverso.webp",
+      "bytes": 44092,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_provisional_1870",
+      "side": 1,
+      "image": "ligera/5_pesetas_provisional_1870_reverso.webp",
+      "bytes": 9338,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_provisional_1870",
+      "side": 0,
+      "image": "alta/2_pesetas_provisional_1870_anverso.webp",
+      "bytes": 40218,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_provisional_1870",
+      "side": 0,
+      "image": "ligera/2_pesetas_provisional_1870_anverso.webp",
+      "bytes": 8426,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_provisional_1870",
+      "side": 1,
+      "image": "alta/2_pesetas_provisional_1870_reverso.webp",
+      "bytes": 44782,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_provisional_1870",
+      "side": 1,
+      "image": "ligera/2_pesetas_provisional_1870_reverso.webp",
+      "bytes": 9062,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_provisional_1870",
+      "side": 0,
+      "image": "alta/50_centimos_provisional_1870_anverso.webp",
+      "bytes": 40288,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_provisional_1870",
+      "side": 0,
+      "image": "ligera/50_centimos_provisional_1870_anverso.webp",
+      "bytes": 8352,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_provisional_1870",
+      "side": 1,
+      "image": "alta/50_centimos_provisional_1870_reverso.webp",
+      "bytes": 44484,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_provisional_1870",
+      "side": 1,
+      "image": "ligera/50_centimos_provisional_1870_reverso.webp",
+      "bytes": 8972,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_centimos_provisional_1869",
+      "side": 0,
+      "image": "alta/10_centimos_provisional_1869_anverso.webp",
+      "bytes": 42630,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_centimos_provisional_1869",
+      "side": 0,
+      "image": "ligera/10_centimos_provisional_1869_anverso.webp",
+      "bytes": 9170,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_centimos_provisional_1869",
+      "side": 1,
+      "image": "alta/10_centimos_provisional_1869_reverso.webp",
+      "bytes": 44758,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_centimos_provisional_1869",
+      "side": 1,
+      "image": "ligera/10_centimos_provisional_1869_reverso.webp",
+      "bytes": 9542,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_centimos_provisional_1869",
+      "side": 0,
+      "image": "alta/5_centimos_provisional_1869_anverso.webp",
+      "bytes": 42640,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_centimos_provisional_1869",
+      "side": 0,
+      "image": "ligera/5_centimos_provisional_1869_anverso.webp",
+      "bytes": 9236,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_centimos_provisional_1869",
+      "side": 1,
+      "image": "alta/5_centimos_provisional_1869_reverso.webp",
+      "bytes": 46588,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_centimos_provisional_1869",
+      "side": 1,
+      "image": "ligera/5_centimos_provisional_1869_reverso.webp",
+      "bytes": 9814,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso12_1876",
+      "side": 0,
+      "image": "alta/5_pesetas_alfonso12_1876_anverso.webp",
+      "bytes": 37214,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso12_1876",
+      "side": 0,
+      "image": "ligera/5_pesetas_alfonso12_1876_anverso.webp",
+      "bytes": 8074,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso12_1876",
+      "side": 1,
+      "image": "alta/5_pesetas_alfonso12_1876_reverso.webp",
+      "bytes": 45426,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso12_1876",
+      "side": 1,
+      "image": "ligera/5_pesetas_alfonso12_1876_reverso.webp",
+      "bytes": 9380,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso12_1881",
+      "side": 0,
+      "image": "alta/2_pesetas_alfonso12_1881_anverso.webp",
+      "bytes": 37782,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso12_1881",
+      "side": 0,
+      "image": "ligera/2_pesetas_alfonso12_1881_anverso.webp",
+      "bytes": 8138,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso12_1881",
+      "side": 1,
+      "image": "alta/2_pesetas_alfonso12_1881_reverso.webp",
+      "bytes": 47874,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso12_1881",
+      "side": 1,
+      "image": "ligera/2_pesetas_alfonso12_1881_reverso.webp",
+      "bytes": 9462,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso12_1881",
+      "side": 0,
+      "image": "alta/1_peseta_alfonso12_1881_anverso.webp",
+      "bytes": 38498,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso12_1881",
+      "side": 0,
+      "image": "ligera/1_peseta_alfonso12_1881_anverso.webp",
+      "bytes": 8112,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso12_1881",
+      "side": 1,
+      "image": "alta/1_peseta_alfonso12_1881_reverso.webp",
+      "bytes": 47460,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso12_1881",
+      "side": 1,
+      "image": "ligera/1_peseta_alfonso12_1881_reverso.webp",
+      "bytes": 9362,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_alfonso12_1880",
+      "side": 0,
+      "image": "alta/50_centimos_alfonso12_1880_anverso.webp",
+      "bytes": 37278,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_alfonso12_1880",
+      "side": 0,
+      "image": "ligera/50_centimos_alfonso12_1880_anverso.webp",
+      "bytes": 8048,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_alfonso12_1880",
+      "side": 1,
+      "image": "alta/50_centimos_alfonso12_1880_reverso.webp",
+      "bytes": 46878,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50_centimos_alfonso12_1880",
+      "side": 1,
+      "image": "ligera/50_centimos_alfonso12_1880_reverso.webp",
+      "bytes": 9148,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25_pesetas_alfonso12_1876",
+      "side": 0,
+      "image": "alta/25_pesetas_alfonso12_1876_anverso.webp",
+      "bytes": 41502,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25_pesetas_alfonso12_1876",
+      "side": 0,
+      "image": "ligera/25_pesetas_alfonso12_1876_anverso.webp",
+      "bytes": 8824,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25_pesetas_alfonso12_1876",
+      "side": 1,
+      "image": "alta/25_pesetas_alfonso12_1876_reverso.webp",
+      "bytes": 55172,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25_pesetas_alfonso12_1876",
+      "side": 1,
+      "image": "ligera/25_pesetas_alfonso12_1876_reverso.webp",
+      "bytes": 10784,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_pesetas_alfonso12_1878",
+      "side": 0,
+      "image": "alta/10_pesetas_alfonso12_1878_anverso.webp",
+      "bytes": 41568,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_pesetas_alfonso12_1878",
+      "side": 0,
+      "image": "ligera/10_pesetas_alfonso12_1878_anverso.webp",
+      "bytes": 8748,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_pesetas_alfonso12_1878",
+      "side": 1,
+      "image": "alta/10_pesetas_alfonso12_1878_reverso.webp",
+      "bytes": 56332,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10_pesetas_alfonso12_1878",
+      "side": 1,
+      "image": "ligera/10_pesetas_alfonso12_1878_reverso.webp",
+      "bytes": 10798,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1892_pelon",
+      "side": 0,
+      "image": "alta/5_pesetas_alfonso13_1892_pelon_anverso.webp",
+      "bytes": 36262,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1892_pelon",
+      "side": 0,
+      "image": "ligera/5_pesetas_alfonso13_1892_pelon_anverso.webp",
+      "bytes": 7844,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1892_pelon",
+      "side": 1,
+      "image": "alta/5_pesetas_alfonso13_1892_pelon_reverso.webp",
+      "bytes": 44102,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1892_pelon",
+      "side": 1,
+      "image": "ligera/5_pesetas_alfonso13_1892_pelon_reverso.webp",
+      "bytes": 9242,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1898",
+      "side": 0,
+      "image": "alta/5_pesetas_alfonso13_1898_anverso.webp",
+      "bytes": 36848,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1898",
+      "side": 0,
+      "image": "ligera/5_pesetas_alfonso13_1898_anverso.webp",
+      "bytes": 7940,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1898",
+      "side": 1,
+      "image": "alta/5_pesetas_alfonso13_1898_reverso.webp",
+      "bytes": 44326,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_alfonso13_1898",
+      "side": 1,
+      "image": "ligera/5_pesetas_alfonso13_1898_reverso.webp",
+      "bytes": 9218,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso13_1894",
+      "side": 0,
+      "image": "alta/2_pesetas_alfonso13_1894_anverso.webp",
+      "bytes": 38450,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso13_1894",
+      "side": 0,
+      "image": "ligera/2_pesetas_alfonso13_1894_anverso.webp",
+      "bytes": 8208,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso13_1894",
+      "side": 1,
+      "image": "alta/2_pesetas_alfonso13_1894_reverso.webp",
+      "bytes": 47634,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_pesetas_alfonso13_1894",
+      "side": 1,
+      "image": "ligera/2_pesetas_alfonso13_1894_reverso.webp",
+      "bytes": 9344,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso13_1902",
+      "side": 0,
+      "image": "alta/1_peseta_alfonso13_1902_anverso.webp",
+      "bytes": 38868,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso13_1902",
+      "side": 0,
+      "image": "ligera/1_peseta_alfonso13_1902_anverso.webp",
+      "bytes": 8166,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso13_1902",
+      "side": 1,
+      "image": "alta/1_peseta_alfonso13_1902_reverso.webp",
+      "bytes": 50890,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_alfonso13_1902",
+      "side": 1,
+      "image": "ligera/1_peseta_alfonso13_1902_reverso.webp",
+      "bytes": 10144,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_pesetas_alfonso13_1890",
+      "side": 0,
+      "image": "alta/20_pesetas_alfonso13_1890_anverso.webp",
+      "bytes": 40532,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_pesetas_alfonso13_1890",
+      "side": 0,
+      "image": "ligera/20_pesetas_alfonso13_1890_anverso.webp",
+      "bytes": 8728,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_pesetas_alfonso13_1890",
+      "side": 1,
+      "image": "alta/20_pesetas_alfonso13_1890_reverso.webp",
+      "bytes": 55560,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20_pesetas_alfonso13_1890",
+      "side": 1,
+      "image": "ligera/20_pesetas_alfonso13_1890_reverso.webp",
+      "bytes": 10624,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25_centimos_alfonso13_1926",
+      "side": 0,
+      "image": "alta/25_centimos_alfonso13_1926_anverso.webp",
+      "bytes": 32374,
+      "resolution": 860,
+      "pixel_alpha": 0
+    },
+    {
+      "id": "25_centimos_alfonso13_1926",
+      "side": 0,
+      "image": "ligera/25_centimos_alfonso13_1926_anverso.webp",
+      "bytes": 7240,
+      "resolution": 270,
+      "pixel_alpha": 0
+    },
+    {
+      "id": "25_centimos_alfonso13_1926",
+      "side": 1,
+      "image": "alta/25_centimos_alfonso13_1926_reverso.webp",
+      "bytes": 38960,
+      "resolution": 860,
+      "pixel_alpha": 0
+    },
+    {
+      "id": "25_centimos_alfonso13_1926",
+      "side": 1,
+      "image": "ligera/25_centimos_alfonso13_1926_reverso.webp",
+      "bytes": 8182,
+      "resolution": 270,
+      "pixel_alpha": 0
+    },
+    {
+      "id": "5_pesetas_franco_1949",
+      "side": 0,
+      "image": "alta/5_pesetas_franco_1949_anverso.webp",
+      "bytes": 39222,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1949",
+      "side": 0,
+      "image": "ligera/5_pesetas_franco_1949_anverso.webp",
+      "bytes": 8118,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1949",
+      "side": 1,
+      "image": "alta/5_pesetas_franco_1949_reverso.webp",
+      "bytes": 42172,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1949",
+      "side": 1,
+      "image": "ligera/5_pesetas_franco_1949_reverso.webp",
+      "bytes": 8592,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1957",
+      "side": 0,
+      "image": "alta/5_pesetas_franco_1957_anverso.webp",
+      "bytes": 36654,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1957",
+      "side": 0,
+      "image": "ligera/5_pesetas_franco_1957_anverso.webp",
+      "bytes": 7960,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1957",
+      "side": 1,
+      "image": "alta/5_pesetas_franco_1957_reverso.webp",
+      "bytes": 41886,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_franco_1957",
+      "side": 1,
+      "image": "ligera/5_pesetas_franco_1957_reverso.webp",
+      "bytes": 8282,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_franco_1944",
+      "side": 0,
+      "image": "alta/1_peseta_franco_1944_anverso.webp",
+      "bytes": 49788,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_franco_1944",
+      "side": 0,
+      "image": "ligera/1_peseta_franco_1944_anverso.webp",
+      "bytes": 9788,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_franco_1944",
+      "side": 1,
+      "image": "alta/1_peseta_franco_1944_reverso.webp",
+      "bytes": 45120,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_franco_1944",
+      "side": 1,
+      "image": "ligera/1_peseta_franco_1944_reverso.webp",
+      "bytes": 8840,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_juancarlos_1975",
+      "side": 0,
+      "image": "alta/1_peseta_juancarlos_1975_anverso.webp",
+      "bytes": 35046,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_juancarlos_1975",
+      "side": 0,
+      "image": "ligera/1_peseta_juancarlos_1975_anverso.webp",
+      "bytes": 7438,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_juancarlos_1975",
+      "side": 1,
+      "image": "alta/1_peseta_juancarlos_1975_reverso.webp",
+      "bytes": 40636,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_juancarlos_1975",
+      "side": 1,
+      "image": "ligera/1_peseta_juancarlos_1975_reverso.webp",
+      "bytes": 8110,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_juancarlos_1989",
+      "side": 0,
+      "image": "alta/5_pesetas_juancarlos_1989_anverso.webp",
+      "bytes": 37530,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_juancarlos_1989",
+      "side": 0,
+      "image": "ligera/5_pesetas_juancarlos_1989_anverso.webp",
+      "bytes": 7914,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_juancarlos_1989",
+      "side": 1,
+      "image": "alta/5_pesetas_juancarlos_1989_reverso.webp",
+      "bytes": 37864,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5_pesetas_juancarlos_1989",
+      "side": 1,
+      "image": "ligera/5_pesetas_juancarlos_1989_reverso.webp",
+      "bytes": 7780,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_republica_1933",
+      "side": 0,
+      "image": "alta/1_peseta_republica_1933_anverso.webp",
+      "bytes": 40880,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_republica_1933",
+      "side": 0,
+      "image": "ligera/1_peseta_republica_1933_anverso.webp",
+      "bytes": 8536,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_republica_1933",
+      "side": 1,
+      "image": "alta/1_peseta_republica_1933_reverso.webp",
+      "bytes": 43208,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1_peseta_republica_1933",
+      "side": 1,
+      "image": "ligera/1_peseta_republica_1933_reverso.webp",
+      "bytes": 8888,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_maravedis_felipe3_1600",
+      "side": 0,
+      "image": "alta/4_maravedis_felipe3_1600_anverso.webp",
+      "bytes": 31238,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_maravedis_felipe3_1600",
+      "side": 0,
+      "image": "ligera/4_maravedis_felipe3_1600_anverso.webp",
+      "bytes": 6904,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_maravedis_felipe3_1600",
+      "side": 1,
+      "image": "alta/4_maravedis_felipe3_1600_reverso.webp",
+      "bytes": 37646,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4_maravedis_felipe3_1600",
+      "side": 1,
+      "image": "ligera/4_maravedis_felipe3_1600_reverso.webp",
+      "bytes": 7872,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_felipe5_1739_columnaria",
+      "side": 0,
+      "image": "alta/8_reales_felipe5_1739_columnaria_anverso.webp",
+      "bytes": 43890,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_felipe5_1739_columnaria",
+      "side": 0,
+      "image": "ligera/8_reales_felipe5_1739_columnaria_anverso.webp",
+      "bytes": 9538,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_felipe5_1739_columnaria",
+      "side": 1,
+      "image": "alta/8_reales_felipe5_1739_columnaria_reverso.webp",
+      "bytes": 45822,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8_reales_felipe5_1739_columnaria",
+      "side": 1,
+      "image": "ligera/8_reales_felipe5_1739_columnaria_reverso.webp",
+      "bytes": 9052,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge3_1820",
+      "side": 0,
+      "image": "alta/soberano_jorge3_1820_anverso.webp",
+      "bytes": 43254,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge3_1820",
+      "side": 0,
+      "image": "ligera/soberano_jorge3_1820_anverso.webp",
+      "bytes": 9172,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge3_1820",
+      "side": 1,
+      "image": "alta/soberano_jorge3_1820_reverso.webp",
+      "bytes": 46350,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "soberano_jorge3_1820",
+      "side": 1,
+      "image": "ligera/soberano_jorge3_1820_reverso.webp",
+      "bytes": 9282,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_soberano_victoria_1887",
+      "side": 0,
+      "image": "alta/medio_soberano_victoria_1887_anverso.webp",
+      "bytes": 41156,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_soberano_victoria_1887",
+      "side": 0,
+      "image": "ligera/medio_soberano_victoria_1887_anverso.webp",
+      "bytes": 8730,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_soberano_victoria_1887",
+      "side": 1,
+      "image": "alta/medio_soberano_victoria_1887_reverso.webp",
+      "bytes": 45926,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "medio_soberano_victoria_1887",
+      "side": 1,
+      "image": "ligera/medio_soberano_victoria_1887_reverso.webp",
+      "bytes": 9338,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "florin_victoria_1849_godless",
+      "side": 0,
+      "image": "alta/florin_victoria_1849_godless_anverso.webp",
+      "bytes": 41170,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "florin_victoria_1849_godless",
+      "side": 0,
+      "image": "ligera/florin_victoria_1849_godless_anverso.webp",
+      "bytes": 8372,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "florin_victoria_1849_godless",
+      "side": 1,
+      "image": "alta/florin_victoria_1849_godless_reverso.webp",
+      "bytes": 44918,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "florin_victoria_1849_godless",
+      "side": 1,
+      "image": "ligera/florin_victoria_1849_godless_reverso.webp",
+      "bytes": 9342,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "penique_victoria_1860",
+      "side": 0,
+      "image": "alta/penique_victoria_1860_anverso.webp",
+      "bytes": 42090,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "penique_victoria_1860",
+      "side": 0,
+      "image": "ligera/penique_victoria_1860_anverso.webp",
+      "bytes": 8900,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "penique_victoria_1860",
+      "side": 1,
+      "image": "alta/penique_victoria_1860_reverso.webp",
+      "bytes": 36164,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "penique_victoria_1860",
+      "side": 1,
+      "image": "ligera/penique_victoria_1860_reverso.webp",
+      "bytes": 7918,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chelin_jorge6_1940",
+      "side": 0,
+      "image": "alta/chelin_jorge6_1940_anverso.webp",
+      "bytes": 39010,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chelin_jorge6_1940",
+      "side": 0,
+      "image": "ligera/chelin_jorge6_1940_anverso.webp",
+      "bytes": 8196,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chelin_jorge6_1940",
+      "side": 1,
+      "image": "alta/chelin_jorge6_1940_reverso.webp",
+      "bytes": 43536,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chelin_jorge6_1940",
+      "side": 1,
+      "image": "ligera/chelin_jorge6_1940_reverso.webp",
+      "bytes": 8986,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "seis_peniques_jorge5_1920",
+      "side": 0,
+      "image": "alta/seis_peniques_jorge5_1920_anverso.webp",
+      "bytes": 40534,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "seis_peniques_jorge5_1920",
+      "side": 0,
+      "image": "ligera/seis_peniques_jorge5_1920_anverso.webp",
+      "bytes": 8558,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "seis_peniques_jorge5_1920",
+      "side": 1,
+      "image": "alta/seis_peniques_jorge5_1920_reverso.webp",
+      "bytes": 38016,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "seis_peniques_jorge5_1920",
+      "side": 1,
+      "image": "ligera/seis_peniques_jorge5_1920_reverso.webp",
+      "bytes": 8046,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_luisfelipe_1831",
+      "side": 0,
+      "image": "alta/5fr_luisfelipe_1831_anverso.webp",
+      "bytes": 39632,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_luisfelipe_1831",
+      "side": 0,
+      "image": "ligera/5fr_luisfelipe_1831_anverso.webp",
+      "bytes": 8312,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_luisfelipe_1831",
+      "side": 1,
+      "image": "alta/5fr_luisfelipe_1831_reverso.webp",
+      "bytes": 46442,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_luisfelipe_1831",
+      "side": 1,
+      "image": "ligera/5fr_luisfelipe_1831_reverso.webp",
+      "bytes": 9046,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_napoleon1_1811",
+      "side": 0,
+      "image": "alta/20fr_napoleon1_1811_anverso.webp",
+      "bytes": 43898,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_napoleon1_1811",
+      "side": 0,
+      "image": "ligera/20fr_napoleon1_1811_anverso.webp",
+      "bytes": 9166,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_napoleon1_1811",
+      "side": 1,
+      "image": "alta/20fr_napoleon1_1811_reverso.webp",
+      "bytes": 41974,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_napoleon1_1811",
+      "side": 1,
+      "image": "ligera/20fr_napoleon1_1811_reverso.webp",
+      "bytes": 8862,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_napoleon3_1867",
+      "side": 0,
+      "image": "alta/5fr_napoleon3_1867_anverso.webp",
+      "bytes": 43494,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_napoleon3_1867",
+      "side": 0,
+      "image": "ligera/5fr_napoleon3_1867_anverso.webp",
+      "bytes": 8744,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_napoleon3_1867",
+      "side": 1,
+      "image": "alta/5fr_napoleon3_1867_reverso.webp",
+      "bytes": 47916,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_napoleon3_1867",
+      "side": 1,
+      "image": "ligera/5fr_napoleon3_1867_reverso.webp",
+      "bytes": 9054,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_ceres_1851",
+      "side": 0,
+      "image": "alta/20fr_ceres_1851_anverso.webp",
+      "bytes": 45268,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_ceres_1851",
+      "side": 0,
+      "image": "ligera/20fr_ceres_1851_anverso.webp",
+      "bytes": 9412,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_ceres_1851",
+      "side": 1,
+      "image": "alta/20fr_ceres_1851_reverso.webp",
+      "bytes": 55766,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_ceres_1851",
+      "side": 1,
+      "image": "ligera/20fr_ceres_1851_reverso.webp",
+      "bytes": 11154,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_semeuse_1960",
+      "side": 0,
+      "image": "alta/5fr_semeuse_1960_anverso.webp",
+      "bytes": 38518,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_semeuse_1960",
+      "side": 0,
+      "image": "ligera/5fr_semeuse_1960_anverso.webp",
+      "bytes": 8116,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_semeuse_1960",
+      "side": 1,
+      "image": "alta/5fr_semeuse_1960_reverso.webp",
+      "bytes": 39458,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_semeuse_1960",
+      "side": 1,
+      "image": "ligera/5fr_semeuse_1960_reverso.webp",
+      "bytes": 8556,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "3mark_prusia_1913",
+      "side": 0,
+      "image": "alta/3mark_prusia_1913_anverso.webp",
+      "bytes": 41404,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "3mark_prusia_1913",
+      "side": 0,
+      "image": "ligera/3mark_prusia_1913_anverso.webp",
+      "bytes": 8700,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "3mark_prusia_1913",
+      "side": 1,
+      "image": "alta/3mark_prusia_1913_reverso.webp",
+      "bytes": 48168,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "3mark_prusia_1913",
+      "side": 1,
+      "image": "ligera/3mark_prusia_1913_reverso.webp",
+      "bytes": 9944,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_prusia_1830",
+      "side": 0,
+      "image": "alta/thaler_prusia_1830_anverso.webp",
+      "bytes": 39552,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_prusia_1830",
+      "side": 0,
+      "image": "ligera/thaler_prusia_1830_anverso.webp",
+      "bytes": 8492,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_prusia_1830",
+      "side": 1,
+      "image": "alta/thaler_prusia_1830_reverso.webp",
+      "bytes": 42276,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_prusia_1830",
+      "side": 1,
+      "image": "ligera/thaler_prusia_1830_reverso.webp",
+      "bytes": 8616,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5mark_baviera_1907",
+      "side": 0,
+      "image": "alta/5mark_baviera_1907_anverso.webp",
+      "bytes": 37832,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5mark_baviera_1907",
+      "side": 0,
+      "image": "ligera/5mark_baviera_1907_anverso.webp",
+      "bytes": 8222,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5mark_baviera_1907",
+      "side": 1,
+      "image": "alta/5mark_baviera_1907_reverso.webp",
+      "bytes": 46154,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5mark_baviera_1907",
+      "side": 1,
+      "image": "ligera/5mark_baviera_1907_reverso.webp",
+      "bytes": 9418,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_sajonia_1854",
+      "side": 0,
+      "image": "alta/thaler_sajonia_1854_anverso.webp",
+      "bytes": 39220,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_sajonia_1854",
+      "side": 0,
+      "image": "ligera/thaler_sajonia_1854_anverso.webp",
+      "bytes": 8306,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_sajonia_1854",
+      "side": 1,
+      "image": "alta/thaler_sajonia_1854_reverso.webp",
+      "bytes": 38130,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "thaler_sajonia_1854",
+      "side": 1,
+      "image": "ligera/thaler_sajonia_1854_reverso.webp",
+      "bytes": 8412,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20mark_prusia_1900",
+      "side": 0,
+      "image": "alta/20mark_prusia_1900_anverso.webp",
+      "bytes": 42882,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20mark_prusia_1900",
+      "side": 0,
+      "image": "ligera/20mark_prusia_1900_anverso.webp",
+      "bytes": 9108,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20mark_prusia_1900",
+      "side": 1,
+      "image": "alta/20mark_prusia_1900_reverso.webp",
+      "bytes": 49994,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20mark_prusia_1900",
+      "side": 1,
+      "image": "ligera/20mark_prusia_1900_reverso.webp",
+      "bytes": 10092,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4ducados_austria_1915",
+      "side": 0,
+      "image": "alta/4ducados_austria_1915_anverso.webp",
+      "bytes": 44342,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4ducados_austria_1915",
+      "side": 0,
+      "image": "ligera/4ducados_austria_1915_anverso.webp",
+      "bytes": 9248,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4ducados_austria_1915",
+      "side": 1,
+      "image": "alta/4ducados_austria_1915_reverso.webp",
+      "bytes": 50950,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "4ducados_austria_1915",
+      "side": 1,
+      "image": "ligera/4ducados_austria_1915_reverso.webp",
+      "bytes": 10162,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1corona_austria_1908",
+      "side": 0,
+      "image": "alta/1corona_austria_1908_anverso.webp",
+      "bytes": 43340,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1corona_austria_1908",
+      "side": 0,
+      "image": "ligera/1corona_austria_1908_anverso.webp",
+      "bytes": 8768,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1corona_austria_1908",
+      "side": 1,
+      "image": "alta/1corona_austria_1908_reverso.webp",
+      "bytes": 38230,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1corona_austria_1908",
+      "side": 1,
+      "image": "ligera/1corona_austria_1908_reverso.webp",
+      "bytes": 8106,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_vittorio2_1873",
+      "side": 0,
+      "image": "alta/5lire_vittorio2_1873_anverso.webp",
+      "bytes": 38988,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_vittorio2_1873",
+      "side": 0,
+      "image": "ligera/5lire_vittorio2_1873_anverso.webp",
+      "bytes": 8310,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_vittorio2_1873",
+      "side": 1,
+      "image": "alta/5lire_vittorio2_1873_reverso.webp",
+      "bytes": 47144,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_vittorio2_1873",
+      "side": 1,
+      "image": "ligera/5lire_vittorio2_1873_reverso.webp",
+      "bytes": 9736,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_umberto1_1879",
+      "side": 0,
+      "image": "alta/5lire_umberto1_1879_anverso.webp",
+      "bytes": 38536,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_umberto1_1879",
+      "side": 0,
+      "image": "ligera/5lire_umberto1_1879_anverso.webp",
+      "bytes": 8164,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_umberto1_1879",
+      "side": 1,
+      "image": "alta/5lire_umberto1_1879_reverso.webp",
+      "bytes": 46920,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5lire_umberto1_1879",
+      "side": 1,
+      "image": "ligera/5lire_umberto1_1879_reverso.webp",
+      "bytes": 9748,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1lira_vittorio2_1863",
+      "side": 0,
+      "image": "alta/1lira_vittorio2_1863_anverso.webp",
+      "bytes": 39006,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1lira_vittorio2_1863",
+      "side": 0,
+      "image": "ligera/1lira_vittorio2_1863_anverso.webp",
+      "bytes": 8322,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1lira_vittorio2_1863",
+      "side": 1,
+      "image": "alta/1lira_vittorio2_1863_reverso.webp",
+      "bytes": 48408,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1lira_vittorio2_1863",
+      "side": 1,
+      "image": "ligera/1lira_vittorio2_1863_reverso.webp",
+      "bytes": 9724,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rublo_nicolas2_1897",
+      "side": 0,
+      "image": "alta/rublo_nicolas2_1897_anverso.webp",
+      "bytes": 42420,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rublo_nicolas2_1897",
+      "side": 0,
+      "image": "ligera/rublo_nicolas2_1897_anverso.webp",
+      "bytes": 8794,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rublo_nicolas2_1897",
+      "side": 1,
+      "image": "alta/rublo_nicolas2_1897_reverso.webp",
+      "bytes": 43592,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rublo_nicolas2_1897",
+      "side": 1,
+      "image": "ligera/rublo_nicolas2_1897_reverso.webp",
+      "bytes": 8942,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5rublos_nicolas2_1899",
+      "side": 0,
+      "image": "alta/5rublos_nicolas2_1899_anverso.webp",
+      "bytes": 46606,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5rublos_nicolas2_1899",
+      "side": 0,
+      "image": "ligera/5rublos_nicolas2_1899_anverso.webp",
+      "bytes": 9614,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5rublos_nicolas2_1899",
+      "side": 1,
+      "image": "alta/5rublos_nicolas2_1899_reverso.webp",
+      "bytes": 46702,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5rublos_nicolas2_1899",
+      "side": 1,
+      "image": "ligera/5rublos_nicolas2_1899_reverso.webp",
+      "bytes": 9622,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chervonets_1923",
+      "side": 0,
+      "image": "alta/chervonets_1923_anverso.webp",
+      "bytes": 44994,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chervonets_1923",
+      "side": 0,
+      "image": "ligera/chervonets_1923_anverso.webp",
+      "bytes": 9738,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chervonets_1923",
+      "side": 1,
+      "image": "alta/chervonets_1923_reverso.webp",
+      "bytes": 42908,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "chervonets_1923",
+      "side": 1,
+      "image": "ligera/chervonets_1923_reverso.webp",
+      "bytes": 8846,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_helvetia_1907",
+      "side": 0,
+      "image": "alta/5fr_helvetia_1907_anverso.webp",
+      "bytes": 39946,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_helvetia_1907",
+      "side": 0,
+      "image": "ligera/5fr_helvetia_1907_anverso.webp",
+      "bytes": 8418,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_helvetia_1907",
+      "side": 1,
+      "image": "alta/5fr_helvetia_1907_reverso.webp",
+      "bytes": 47836,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_helvetia_1907",
+      "side": 1,
+      "image": "ligera/5fr_helvetia_1907_reverso.webp",
+      "bytes": 9012,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2fr_helvetia_1860",
+      "side": 0,
+      "image": "alta/2fr_helvetia_1860_anverso.webp",
+      "bytes": 42708,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2fr_helvetia_1860",
+      "side": 0,
+      "image": "ligera/2fr_helvetia_1860_anverso.webp",
+      "bytes": 8646,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2fr_helvetia_1860",
+      "side": 1,
+      "image": "alta/2fr_helvetia_1860_reverso.webp",
+      "bytes": 48652,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2fr_helvetia_1860",
+      "side": 1,
+      "image": "ligera/2fr_helvetia_1860_reverso.webp",
+      "bytes": 9080,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1fr_helvetia_1861",
+      "side": 0,
+      "image": "alta/1fr_helvetia_1861_anverso.webp",
+      "bytes": 42700,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1fr_helvetia_1861",
+      "side": 0,
+      "image": "ligera/1fr_helvetia_1861_anverso.webp",
+      "bytes": 8646,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1fr_helvetia_1861",
+      "side": 1,
+      "image": "alta/1fr_helvetia_1861_reverso.webp",
+      "bytes": 48570,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1fr_helvetia_1861",
+      "side": 1,
+      "image": "ligera/1fr_helvetia_1861_reverso.webp",
+      "bytes": 9108,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_leopoldo2_1870",
+      "side": 0,
+      "image": "alta/5fr_leopoldo2_1870_anverso.webp",
+      "bytes": 39768,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_leopoldo2_1870",
+      "side": 0,
+      "image": "ligera/5fr_leopoldo2_1870_anverso.webp",
+      "bytes": 8268,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_leopoldo2_1870",
+      "side": 1,
+      "image": "alta/5fr_leopoldo2_1870_reverso.webp",
+      "bytes": 53460,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "5fr_leopoldo2_1870",
+      "side": 1,
+      "image": "ligera/5fr_leopoldo2_1870_reverso.webp",
+      "bytes": 10338,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_leopoldo2_1875",
+      "side": 0,
+      "image": "alta/20fr_leopoldo2_1875_anverso.webp",
+      "bytes": 43844,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_leopoldo2_1875",
+      "side": 0,
+      "image": "ligera/20fr_leopoldo2_1875_anverso.webp",
+      "bytes": 9126,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_leopoldo2_1875",
+      "side": 1,
+      "image": "alta/20fr_leopoldo2_1875_reverso.webp",
+      "bytes": 48836,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20fr_leopoldo2_1875",
+      "side": 1,
+      "image": "ligera/20fr_leopoldo2_1875_reverso.webp",
+      "bytes": 9876,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_5gulden_guillermo3_1870",
+      "side": 0,
+      "image": "alta/2_5gulden_guillermo3_1870_anverso.webp",
+      "bytes": 40116,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_5gulden_guillermo3_1870",
+      "side": 0,
+      "image": "ligera/2_5gulden_guillermo3_1870_anverso.webp",
+      "bytes": 8540,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_5gulden_guillermo3_1870",
+      "side": 1,
+      "image": "alta/2_5gulden_guillermo3_1870_reverso.webp",
+      "bytes": 46652,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2_5gulden_guillermo3_1870",
+      "side": 1,
+      "image": "ligera/2_5gulden_guillermo3_1870_reverso.webp",
+      "bytes": 9604,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_dinamarca_1903",
+      "side": 0,
+      "image": "alta/2kroner_dinamarca_1903_anverso.webp",
+      "bytes": 41080,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_dinamarca_1903",
+      "side": 0,
+      "image": "ligera/2kroner_dinamarca_1903_anverso.webp",
+      "bytes": 8638,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_dinamarca_1903",
+      "side": 1,
+      "image": "alta/2kroner_dinamarca_1903_reverso.webp",
+      "bytes": 39828,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_dinamarca_1903",
+      "side": 1,
+      "image": "ligera/2kroner_dinamarca_1903_reverso.webp",
+      "bytes": 8404,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kronor_suecia_1897",
+      "side": 0,
+      "image": "alta/2kronor_suecia_1897_anverso.webp",
+      "bytes": 41412,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kronor_suecia_1897",
+      "side": 0,
+      "image": "ligera/2kronor_suecia_1897_anverso.webp",
+      "bytes": 8668,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kronor_suecia_1897",
+      "side": 1,
+      "image": "alta/2kronor_suecia_1897_reverso.webp",
+      "bytes": 40764,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kronor_suecia_1897",
+      "side": 1,
+      "image": "ligera/2kronor_suecia_1897_reverso.webp",
+      "bytes": 8498,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_noruega_1900",
+      "side": 0,
+      "image": "alta/2kroner_noruega_1900_anverso.webp",
+      "bytes": 42690,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_noruega_1900",
+      "side": 0,
+      "image": "ligera/2kroner_noruega_1900_anverso.webp",
+      "bytes": 8888,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_noruega_1900",
+      "side": 1,
+      "image": "alta/2kroner_noruega_1900_reverso.webp",
+      "bytes": 39542,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2kroner_noruega_1900",
+      "side": 1,
+      "image": "ligera/2kroner_noruega_1900_reverso.webp",
+      "bytes": 8032,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "500reis_carlos1_1892",
+      "side": 0,
+      "image": "alta/500reis_carlos1_1892_anverso.webp",
+      "bytes": 40376,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "500reis_carlos1_1892",
+      "side": 0,
+      "image": "ligera/500reis_carlos1_1892_anverso.webp",
+      "bytes": 8428,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "500reis_carlos1_1892",
+      "side": 1,
+      "image": "alta/500reis_carlos1_1892_reverso.webp",
+      "bytes": 48096,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "500reis_carlos1_1892",
+      "side": 1,
+      "image": "ligera/500reis_carlos1_1892_reverso.webp",
+      "bytes": 9314,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1000reis_carlos1_1899",
+      "side": 0,
+      "image": "alta/1000reis_carlos1_1899_anverso.webp",
+      "bytes": 41128,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1000reis_carlos1_1899",
+      "side": 0,
+      "image": "ligera/1000reis_carlos1_1899_anverso.webp",
+      "bytes": 8466,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1000reis_carlos1_1899",
+      "side": 1,
+      "image": "alta/1000reis_carlos1_1899_reverso.webp",
+      "bytes": 36648,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1000reis_carlos1_1899",
+      "side": 1,
+      "image": "ligera/1000reis_carlos1_1899_reverso.webp",
+      "bytes": 7696,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2000reis_pedro2_1857",
+      "side": 0,
+      "image": "alta/2000reis_pedro2_1857_anverso.webp",
+      "bytes": 44390,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2000reis_pedro2_1857",
+      "side": 0,
+      "image": "ligera/2000reis_pedro2_1857_anverso.webp",
+      "bytes": 9570,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2000reis_pedro2_1857",
+      "side": 1,
+      "image": "alta/2000reis_pedro2_1857_reverso.webp",
+      "bytes": 41122,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "2000reis_pedro2_1857",
+      "side": 1,
+      "image": "ligera/2000reis_pedro2_1857_reverso.webp",
+      "bytes": 8550,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8soles_bolivia_1835",
+      "side": 0,
+      "image": "alta/8soles_bolivia_1835_anverso.webp",
+      "bytes": 44320,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8soles_bolivia_1835",
+      "side": 0,
+      "image": "ligera/8soles_bolivia_1835_anverso.webp",
+      "bytes": 8828,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8soles_bolivia_1835",
+      "side": 1,
+      "image": "alta/8soles_bolivia_1835_reverso.webp",
+      "bytes": 38204,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8soles_bolivia_1835",
+      "side": 1,
+      "image": "ligera/8soles_bolivia_1835_reverso.webp",
+      "bytes": 8400,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1sol_peru_1872",
+      "side": 0,
+      "image": "alta/1sol_peru_1872_anverso.webp",
+      "bytes": 37790,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1sol_peru_1872",
+      "side": 0,
+      "image": "ligera/1sol_peru_1872_anverso.webp",
+      "bytes": 8226,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1sol_peru_1872",
+      "side": 1,
+      "image": "alta/1sol_peru_1872_reverso.webp",
+      "bytes": 36926,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1sol_peru_1872",
+      "side": 1,
+      "image": "ligera/1sol_peru_1872_reverso.webp",
+      "bytes": 7488,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_chile_1883",
+      "side": 0,
+      "image": "alta/1peso_chile_1883_anverso.webp",
+      "bytes": 46960,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_chile_1883",
+      "side": 0,
+      "image": "ligera/1peso_chile_1883_anverso.webp",
+      "bytes": 9324,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_chile_1883",
+      "side": 1,
+      "image": "alta/1peso_chile_1883_reverso.webp",
+      "bytes": 42876,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_chile_1883",
+      "side": 1,
+      "image": "ligera/1peso_chile_1883_reverso.webp",
+      "bytes": 8982,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8escudos_chile_1840",
+      "side": 0,
+      "image": "alta/8escudos_chile_1840_anverso.webp",
+      "bytes": 45594,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8escudos_chile_1840",
+      "side": 0,
+      "image": "ligera/8escudos_chile_1840_anverso.webp",
+      "bytes": 9356,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8escudos_chile_1840",
+      "side": 1,
+      "image": "alta/8escudos_chile_1840_reverso.webp",
+      "bytes": 42682,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8escudos_chile_1840",
+      "side": 1,
+      "image": "ligera/8escudos_chile_1840_reverso.webp",
+      "bytes": 8818,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_argentina_1881",
+      "side": 0,
+      "image": "alta/1peso_argentina_1881_anverso.webp",
+      "bytes": 40112,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_argentina_1881",
+      "side": 0,
+      "image": "ligera/1peso_argentina_1881_anverso.webp",
+      "bytes": 8402,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_argentina_1881",
+      "side": 1,
+      "image": "alta/1peso_argentina_1881_reverso.webp",
+      "bytes": 44034,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_argentina_1881",
+      "side": 1,
+      "image": "ligera/1peso_argentina_1881_reverso.webp",
+      "bytes": 8696,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8reales_mexico_1823",
+      "side": 0,
+      "image": "alta/8reales_mexico_1823_anverso.webp",
+      "bytes": 47810,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8reales_mexico_1823",
+      "side": 0,
+      "image": "ligera/8reales_mexico_1823_anverso.webp",
+      "bytes": 8916,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8reales_mexico_1823",
+      "side": 1,
+      "image": "alta/8reales_mexico_1823_reverso.webp",
+      "bytes": 43084,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "8reales_mexico_1823",
+      "side": 1,
+      "image": "ligera/8reales_mexico_1823_reverso.webp",
+      "bytes": 9120,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_mexico_1950",
+      "side": 0,
+      "image": "alta/1peso_mexico_1950_anverso.webp",
+      "bytes": 44228,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_mexico_1950",
+      "side": 0,
+      "image": "ligera/1peso_mexico_1950_anverso.webp",
+      "bytes": 9102,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_mexico_1950",
+      "side": 1,
+      "image": "alta/1peso_mexico_1950_reverso.webp",
+      "bytes": 35246,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1peso_mexico_1950",
+      "side": 1,
+      "image": "ligera/1peso_mexico_1950_reverso.webp",
+      "bytes": 7762,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "onza_libertad_1980",
+      "side": 0,
+      "image": "alta/onza_libertad_1980_anverso.webp",
+      "bytes": 44896,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "onza_libertad_1980",
+      "side": 0,
+      "image": "ligera/onza_libertad_1980_anverso.webp",
+      "bytes": 9288,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "onza_libertad_1980",
+      "side": 1,
+      "image": "alta/onza_libertad_1980_reverso.webp",
+      "bytes": 47000,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "onza_libertad_1980",
+      "side": 1,
+      "image": "ligera/onza_libertad_1980_reverso.webp",
+      "bytes": 9164,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_morgan_1881",
+      "side": 0,
+      "image": "alta/dolar_morgan_1881_anverso.webp",
+      "bytes": 41910,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_morgan_1881",
+      "side": 0,
+      "image": "ligera/dolar_morgan_1881_anverso.webp",
+      "bytes": 8672,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_morgan_1881",
+      "side": 1,
+      "image": "alta/dolar_morgan_1881_reverso.webp",
+      "bytes": 52584,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_morgan_1881",
+      "side": 1,
+      "image": "ligera/dolar_morgan_1881_reverso.webp",
+      "bytes": 10642,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20dolares_saintgaudens_1908",
+      "side": 0,
+      "image": "alta/20dolares_saintgaudens_1908_anverso.webp",
+      "bytes": 48086,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20dolares_saintgaudens_1908",
+      "side": 0,
+      "image": "ligera/20dolares_saintgaudens_1908_anverso.webp",
+      "bytes": 9750,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20dolares_saintgaudens_1908",
+      "side": 1,
+      "image": "alta/20dolares_saintgaudens_1908_reverso.webp",
+      "bytes": 51690,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "20dolares_saintgaudens_1908",
+      "side": 1,
+      "image": "ligera/20dolares_saintgaudens_1908_reverso.webp",
+      "bytes": 10838,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_peace_1922",
+      "side": 0,
+      "image": "alta/dolar_peace_1922_anverso.webp",
+      "bytes": 42642,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_peace_1922",
+      "side": 0,
+      "image": "ligera/dolar_peace_1922_anverso.webp",
+      "bytes": 8736,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_peace_1922",
+      "side": 1,
+      "image": "alta/dolar_peace_1922_reverso.webp",
+      "bytes": 58366,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_peace_1922",
+      "side": 1,
+      "image": "ligera/dolar_peace_1922_reverso.webp",
+      "bytes": 11610,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50centavos_walking_1943",
+      "side": 0,
+      "image": "alta/50centavos_walking_1943_anverso.webp",
+      "bytes": 46196,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50centavos_walking_1943",
+      "side": 0,
+      "image": "ligera/50centavos_walking_1943_anverso.webp",
+      "bytes": 9370,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50centavos_walking_1943",
+      "side": 1,
+      "image": "alta/50centavos_walking_1943_reverso.webp",
+      "bytes": 49140,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50centavos_walking_1943",
+      "side": 1,
+      "image": "ligera/50centavos_walking_1943_reverso.webp",
+      "bytes": 10018,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25centavos_washington_1936",
+      "side": 0,
+      "image": "alta/25centavos_washington_1936_anverso.webp",
+      "bytes": 39412,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25centavos_washington_1936",
+      "side": 0,
+      "image": "ligera/25centavos_washington_1936_anverso.webp",
+      "bytes": 8368,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25centavos_washington_1936",
+      "side": 1,
+      "image": "alta/25centavos_washington_1936_reverso.webp",
+      "bytes": 51170,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "25centavos_washington_1936",
+      "side": 1,
+      "image": "ligera/25centavos_washington_1936_reverso.webp",
+      "bytes": 10542,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10centavos_mercury_1942",
+      "side": 0,
+      "image": "alta/10centavos_mercury_1942_anverso.webp",
+      "bytes": 35926,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10centavos_mercury_1942",
+      "side": 0,
+      "image": "ligera/10centavos_mercury_1942_anverso.webp",
+      "bytes": 7918,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10centavos_mercury_1942",
+      "side": 1,
+      "image": "alta/10centavos_mercury_1942_reverso.webp",
+      "bytes": 40264,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "10centavos_mercury_1942",
+      "side": 1,
+      "image": "ligera/10centavos_mercury_1942_reverso.webp",
+      "bytes": 8686,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centavo_lincoln_1909",
+      "side": 0,
+      "image": "alta/centavo_lincoln_1909_anverso.webp",
+      "bytes": 39476,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centavo_lincoln_1909",
+      "side": 0,
+      "image": "ligera/centavo_lincoln_1909_anverso.webp",
+      "bytes": 8730,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centavo_lincoln_1909",
+      "side": 1,
+      "image": "alta/centavo_lincoln_1909_reverso.webp",
+      "bytes": 43590,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "centavo_lincoln_1909",
+      "side": 1,
+      "image": "ligera/centavo_lincoln_1909_reverso.webp",
+      "bytes": 9230,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1yen_meiji45_1912",
+      "side": 0,
+      "image": "alta/1yen_meiji45_1912_anverso.webp",
+      "bytes": 57024,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1yen_meiji45_1912",
+      "side": 0,
+      "image": "ligera/1yen_meiji45_1912_anverso.webp",
+      "bytes": 10590,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1yen_meiji45_1912",
+      "side": 1,
+      "image": "alta/1yen_meiji45_1912_reverso.webp",
+      "bytes": 49634,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "1yen_meiji45_1912",
+      "side": 1,
+      "image": "ligera/1yen_meiji45_1912_reverso.webp",
+      "bytes": 9434,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50sen_taisho6_1917",
+      "side": 0,
+      "image": "alta/50sen_taisho6_1917_anverso.webp",
+      "bytes": 48970,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50sen_taisho6_1917",
+      "side": 0,
+      "image": "ligera/50sen_taisho6_1917_anverso.webp",
+      "bytes": 11190,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50sen_taisho6_1917",
+      "side": 1,
+      "image": "alta/50sen_taisho6_1917_reverso.webp",
+      "bytes": 36694,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "50sen_taisho6_1917",
+      "side": 1,
+      "image": "ligera/50sen_taisho6_1917_reverso.webp",
+      "bytes": 7474,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_yuanshikai_1914",
+      "side": 0,
+      "image": "alta/dolar_yuanshikai_1914_anverso.webp",
+      "bytes": 35614,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_yuanshikai_1914",
+      "side": 0,
+      "image": "ligera/dolar_yuanshikai_1914_anverso.webp",
+      "bytes": 7716,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_yuanshikai_1914",
+      "side": 1,
+      "image": "alta/dolar_yuanshikai_1914_reverso.webp",
+      "bytes": 37682,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "dolar_yuanshikai_1914",
+      "side": 1,
+      "image": "ligera/dolar_yuanshikai_1914_reverso.webp",
+      "bytes": 7718,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rupia_victoria_reina_1862",
+      "side": 0,
+      "image": "alta/rupia_victoria_reina_1862_anverso.webp",
+      "bytes": 41016,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rupia_victoria_reina_1862",
+      "side": 0,
+      "image": "ligera/rupia_victoria_reina_1862_anverso.webp",
+      "bytes": 8580,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rupia_victoria_reina_1862",
+      "side": 1,
+      "image": "alta/rupia_victoria_reina_1862_reverso.webp",
+      "bytes": 47182,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "rupia_victoria_reina_1862",
+      "side": 1,
+      "image": "ligera/rupia_victoria_reina_1862_reverso.webp",
+      "bytes": 9252,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_alejandro_330ac",
+      "side": 0,
+      "image": "alta/tetradracma_alejandro_330ac_anverso.webp",
+      "bytes": 33026,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_alejandro_330ac",
+      "side": 0,
+      "image": "ligera/tetradracma_alejandro_330ac_anverso.webp",
+      "bytes": 7166,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_alejandro_330ac",
+      "side": 1,
+      "image": "alta/tetradracma_alejandro_330ac_reverso.webp",
+      "bytes": 27272,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_alejandro_330ac",
+      "side": 1,
+      "image": "ligera/tetradracma_alejandro_330ac_reverso.webp",
+      "bytes": 5764,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_ptolomeo_300ac",
+      "side": 0,
+      "image": "alta/tetradracma_ptolomeo_300ac_anverso.webp",
+      "bytes": 32404,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_ptolomeo_300ac",
+      "side": 0,
+      "image": "ligera/tetradracma_ptolomeo_300ac_anverso.webp",
+      "bytes": 7114,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_ptolomeo_300ac",
+      "side": 1,
+      "image": "alta/tetradracma_ptolomeo_300ac_reverso.webp",
+      "bytes": 29632,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "tetradracma_ptolomeo_300ac",
+      "side": 1,
+      "image": "ligera/tetradracma_ptolomeo_300ac_reverso.webp",
+      "bytes": 6360,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_augusto_27ac",
+      "side": 0,
+      "image": "alta/denario_augusto_27ac_anverso.webp",
+      "bytes": 33810,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_augusto_27ac",
+      "side": 0,
+      "image": "ligera/denario_augusto_27ac_anverso.webp",
+      "bytes": 7400,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_augusto_27ac",
+      "side": 1,
+      "image": "alta/denario_augusto_27ac_reverso.webp",
+      "bytes": 33544,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "denario_augusto_27ac",
+      "side": 1,
+      "image": "ligera/denario_augusto_27ac_reverso.webp",
+      "bytes": 6650,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "sestercio_neron_65",
+      "side": 0,
+      "image": "alta/sestercio_neron_65_anverso.webp",
+      "bytes": 40646,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "sestercio_neron_65",
+      "side": 0,
+      "image": "ligera/sestercio_neron_65_anverso.webp",
+      "bytes": 8482,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "sestercio_neron_65",
+      "side": 1,
+      "image": "alta/sestercio_neron_65_reverso.webp",
+      "bytes": 31952,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "sestercio_neron_65",
+      "side": 1,
+      "image": "ligera/sestercio_neron_65_reverso.webp",
+      "bytes": 6978,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "antoniniano_gordiano3_240",
+      "side": 0,
+      "image": "alta/antoniniano_gordiano3_240_anverso.webp",
+      "bytes": 33620,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "antoniniano_gordiano3_240",
+      "side": 0,
+      "image": "ligera/antoniniano_gordiano3_240_anverso.webp",
+      "bytes": 7196,
+      "resolution": 270,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "antoniniano_gordiano3_240",
+      "side": 1,
+      "image": "alta/antoniniano_gordiano3_240_reverso.webp",
+      "bytes": 29050,
+      "resolution": 860,
+      "pixel_alpha": 255
+    },
+    {
+      "id": "antoniniano_gordiano3_240",
+      "side": 1,
+      "image": "ligera/antoniniano_gordiano3_240_reverso.webp",
+      "bytes": 6396,
+      "resolution": 270,
+      "pixel_alpha": 255
+    }
+  ]
+}

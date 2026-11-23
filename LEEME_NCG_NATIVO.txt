@@ -1,0 +1,65 @@
+NCG — El gabinete de certificación
+V18.36.15 · WINDOWS SIN DESCARGA DE NEUTRALINOJS
+==================================================
+
+WINDOWS 10/11 x64 — INSTRUCCIONES
+--------------------------------
+1. En Google Drive, descarga NCG_V18_36_15.zip.
+2. En el Explorador de archivos: clic derecho sobre el ZIP → Extraer todo.
+3. Abre la carpeta NCG_V18_36_15 (dentro de la carpeta extraída).
+4. Haz doble clic en NCG_V18_36_15.exe.
+
+Este ejecutable NO descarga Neutralinojs de GitHub ni de SourceForge.
+Usa Microsoft Edge, Brave o Chrome (uno de ellos debe estar instalado) para
+abrir el juego en una VENTANA independiente sin pestañas ni barra de dirección.
+No es una aplicación WebView2 pura: es el modo de ventana de navegador,
+con un servidor exclusivo y local para NCG.
+
+No abras NCG_Neutralino_Alternativo.exe para la primera prueba: es el antiguo
+lanzador de Windows que SÍ requiere descargar Neutralinojs y disponer de WebView2.
+Solo se mantiene como alternativa por compatibilidad.
+
+GUARDADOS WINDOWS
+----------------
+Esta edición guarda los archivos JSON de la partida en:
+  %LOCALAPPDATA%\NCG\Guardados\
+Por ejemplo: C:\Users\TU_USUARIO\AppData\Local\NCG\Guardados\
+
+Los respaldos manuales se exportan a:
+  %USERPROFILE%\Documents\NCG\Respaldos\
+
+El perfil aislado del navegador (para preferencias locales) se encuentra en:
+  %LOCALAPPDATA%\NCG\NavegadorAislado\
+
+IMPORTANTE: si tenías partida en otra edición nativa (Neutralinojs) o en otro
+PC, exporta primero un respaldo JSON en esa edición e impórtalo desde esta.
+No borres las carpetas de guardados ni de navegador al actualizar.
+La compatibilidad interna de partidas sigue siendo 6.50.
+
+Si Windows bloquea por la procedencia desconocida el nuevo ejecutable sin
+firma digital, comprueba que proviene del ZIP que has recibido. No desactives
+ninguna protección de seguridad de Windows para ejecutarlo.
+
+LINUX MINT x86_64
+-----------------
+Ejecuta NCG_V18_36_15.sh, con la misma edición Neutralino nativa de V18.36.12.
+La dependencia WebKitGTK y los guardados Linux no se han modificado.
+
+DETALLES
+--------
+- Catálogo: 129 monedas y 258 caras, dos modos visuales, SFX y música.
+- El lanzador Windows solo escucha en 127.0.0.1; no abre acceso de red externo.
+- El servidor exige token aleatorio para cada lectura o escritura de guardados.
+- Los archivos se guardan en directorio del usuario, no en el ZIP.
+- Conservados los recursos, UI, Linux y formato de partidas del 6.50.
+- El lanzador Windows nuevo fue compilado para x64 y probado a nivel HTTP,
+  pero no pudo probarse con interfaz Windows real en este entorno.
+
+Código fuente del lanzador offline: fuentes_lanzador_windows/ (Go stdlib).
+Licencias de dependencias: resources/docs/licencias/
+
+INTEGRACION SIGNPATH (PREPARACION, NO FIRMADO)
+------------------------------------------------
+Revisa SIGNPATH_PREPARACION.md.
+El .exe de este ZIP esta SIN firma de terceros: no anuncies aun que esta firmado.
+La firma solo se obtendra tras la aceptacion oficial y una compilacion en GitHub Actions.

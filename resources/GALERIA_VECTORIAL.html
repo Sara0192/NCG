@@ -1,0 +1,188 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NCG · Estudio geométrico</title><style>
+:root{color-scheme:dark;font-family:Inter,system-ui,-apple-system,Arial,sans-serif;background:#111919;color:#e7e3d5}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 70% -20%,#2d3c38,#111919 60%);min-height:100vh}header{display:flex;gap:16px;align-items:center;justify-content:space-between;border-bottom:1px solid #45514a;padding:20px clamp(20px,4vw,68px)}.logo{font:bold 28px Georgia,serif;border:1px solid #ba9b61;padding:12px 14px;color:#e5c98d}.tag{letter-spacing:.15em;color:#d5b981;font-size:11px}.title{font:normal clamp(22px,3vw,39px) Georgia,serif;margin:5px 0}.sub{font-size:12px;color:#aab3a8}a{color:#e5c98d}main{display:grid;grid-template-columns:minmax(370px,1fr) minmax(350px,1fr);gap:22px;padding:25px clamp(20px,4vw,68px);align-items:start}.preview{border:1px solid #374b44;background:linear-gradient(135deg,#132824,#0d1918);padding:22px;border-radius:12px;display:flex;flex-direction:column;align-items:center}.coinWrap{position:relative;width:min(100%,440px,max(190px,calc(100vh - 315px)));aspect-ratio:1;display:grid;place-items:center;background:radial-gradient(circle at center,#344b3f 2%,#1b3029 58%,#111e1b 74%);border-radius:50%;margin:8px auto}#coin{position:relative;z-index:2;display:none;width:100%;height:100%;filter:drop-shadow(9px 17px 13px #0007)}#previewStill{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(9px 17px 13px #0007)}.hint{font-size:12px;color:#c1cabc;text-align:center}.panel{display:grid;min-width:0;gap:17px}.box{background:#1c2724;border:1px solid #354840;border-radius:12px;padding:20px}h2{font:normal 24px Georgia,serif;margin:0 0 16px}label{font-size:12px;display:flex;justify-content:space-between;gap:15px;color:#b7beb2;margin-top:12px}select,input,button{font:inherit}select{width:100%;padding:11px 12px;color:#f2e8d2;background:#0e1917;border:1px solid #627369;border-radius:7px;margin-top:10px}input[type=range]{width:100%;accent-color:#d5b27a;margin:12px 0}button{background:#b79460;color:#18201d;border:0;border-radius:7px;padding:10px 14px;cursor:pointer;font-weight:bold}button.alt{background:#2d413a;color:#e7e3d5;border:1px solid #53655d}.buttons{display:flex;gap:9px;flex-wrap:wrap}.swatches{display:flex;gap:8px;align-items:center;justify-content:center}.swatches span{display:inline-block;width:12px;height:12px;border-radius:50%}.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;max-height:420px;overflow:auto;overscroll-behavior:contain;align-content:start}.tile{background:#111c1a;border:1px solid #374840;border-radius:9px;padding:8px 5px;color:#c8c9b9;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;min-height:128px}.tile.active{border-color:#dabb82;box-shadow:inset 0 0 0 1px #aa8d60}.tile img{width:100%;max-width:92px;aspect-ratio:1;object-fit:contain;content-visibility:auto}.tile span{font-size:10px;max-width:100%;line-height:1.3}.bottom{font-size:12px;line-height:1.6;color:#aebbb1;padding:18px clamp(20px,4vw,68px);border-top:1px solid #34453c}@media(min-width:840px){.preview{position:sticky;top:12px}}
+@media(max-width:839px){main{grid-template-columns:1fr}.preview{scroll-margin-top:12px}.gallery{grid-template-columns:repeat(4,1fr)}.coinWrap{width:min(100%,390px)}}@media(max-width:520px){main{padding:12px;gap:12px}.preview,.box{padding:12px}header{padding:12px}.gallery{grid-template-columns:repeat(3,1fr)}}
+.coinWrap[data-vista="vector"] #previewStill{visibility:hidden}
+.preview h2{text-align:center;margin:5px 0 9px}
+.preview .buttons{justify-content:center}
+</style></head><body><header><div class="logo">NCG</div><div><div class="tag">ESTUDIO VECTORIAL</div><div class="title">Galería numismática</div><div class="sub">129 diseños · 258 caras · anversos y reversos con relieve vectorial, iluminación y desgaste</div></div><div style="display:flex;gap:14px;flex-wrap:wrap"><a href="docs/arte_V18_24/estado_del_arte.html">Estado del arte</a><a href="TUTORIAL_SHADERS.html">Tutorial de shaders</a><a href="index.html">Abrir juego ↗</a></div></header><main><section class="preview" id="coinPreview"><div class="tag" id="typeLabel">MONEDA DE PRUEBA</div><div class="coinWrap" id="coinWrap" data-vista="imagen"><img id="previewStill" alt="Vista de referencia de la moneda seleccionada" decoding="async"><canvas id="coin" width="860" height="860" aria-label="Moneda vectorial de prueba"></canvas></div><h2 id="coinTitle">—</h2><div class="hint" id="dateInfo">Selecciona una pieza y ajusta el desgaste.</div><div class="hint" id="previewStatus" role="status" aria-live="polite">Las miniaturas se cargan desde el archivo local.</div><div class="buttons" style="margin-top:17px"><button id="flip">↻ Girar moneda</button><button class="alt" id="random">Otra al azar</button><button class="alt" id="safeMode" type="button" aria-pressed="false" title="Si el dibujo vectorial provoca lentitud, usa las imágenes locales de seguridad">Solo imagen: No</button></div></section><section class="panel"><section class="box"><h2>Modelar el estado de la moneda</h2><label for="sel">Tipo histórico <span id="count">001 / 129</span></label><select id="sel"></select><label for="coinView">Vista de la moneda</label><select id="coinView"><option value="vectorial">Simple · vectorial</option><option value="realista">Compleja · realista</option></select><label for="imageQuality">Resolución de imagen</label><select id="imageQuality"><option value="ligera">Ligera · 270 px</option><option value="alta">Alta · 860 px</option></select><label for="gradePreset">Calidad visual (simulada)</label><select id="gradePreset"><option value="custom">Manual / personalizado</option><option value="FDC">FDC — flor de cuño</option><option value="SC">SC — sin circular</option><option value="EBC">EBC — excelente conservación</option><option value="MBC">MBC — muy buena conservación</option><option value="BC">BC — buena conservación</option></select><label for="wear">Desgaste del relieve <strong id="wearVal">18 %</strong></label><input type="range" id="wear" min="0" max="100" value="18"><label for="grime">Pátina y suciedad <strong id="grimeVal">10 %</strong></label><input type="range" id="grime" min="0" max="65" value="10"><label for="lightAngle">Ángulo de la luz <strong id="lightVal">−48°</strong></label><input type="range" id="lightAngle" min="-180" max="180" value="-48"><label for="lustre">Brillo metálico <strong id="lustreVal">45 %</strong></label><input type="range" id="lustre" min="0" max="100" value="45"><label for="patina">Intensidad de pátina <strong id="patinaVal">20 %</strong></label><input type="range" id="patina" min="0" max="100" value="20"><label for="damage">Defecto vectorial de prueba</label><select id="damage"><option value="">Sin daños</option><option value="rayas_finas">Rayas finas</option><option value="rayas_cruzadas">Rayas de contacto</option><option value="limpieza_paralela">Limpieza</option><option value="poros_fundicion">Poros</option><option value="corrosion_plata">Corrosión</option><option value="grieta_bano_plata">Grieta del recubrimiento</option><option value="golpe_canto">Golpe de canto</option><option value="perforacion">Perforación</option><option value="reparacion">Reparación</option><option value="graffiti">Graffiti</option><option value="pulido_espejo">Pulido</option><option value="alteracion_superficie">Superficie alterada</option></select><div class="buttons" style="margin-top:14px"><button class="alt preset" data-w="0">MS · Nuevo</button><button class="alt preset" data-w="20">AU</button><button class="alt preset" data-w="43">XF</button><button class="alt preset" data-w="72">VF</button></div></section><section class="box" style="min-height:0"><h2>Archivo geométrico</h2><label for="filter">Filtrar el archivo <span id="filterCount">129 tipos</span></label><select id="filter"></select><div class="gallery" id="gallery"></div></section></section></main><footer class="bottom">Arte vectorial NCG: 129 tipos con diseño reconocible (retratos, águilas, escudos, columnarias, leyendas en latín, cirílico y CJK). El relieve, el lustre, la microtextura y la pátina se calculan por capas. Aprende cada una en el tutorial de shaders. Las miniaturas utilizan vistas locales de seguridad; la moneda grande se dibuja vectorialmente solo cuando se selecciona. También hay un modo ligero sin renderizado.</footer>
+<script src="js/trazos.js"></script><script src="datos/indice_monedas.js"></script><script src="js/metales.js"></script><script src="js/catalogo_extra.js"></script><script src="js/shaders_monedas.js"></script><script src="js/vector_monedas.js"></script>
+<script src="js/arte_cunhos_individuales.js"></script><script src="js/cunhos_v1817.js"></script><script src="js/cargador_monedas.js"></script><script src="assets/vectorial/motor-clasico.js"></script><script>
+(async()=>{
+'use strict';
+await window.NCGExtras.load();
+const esc=s=>String(s??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
+const coins=GAME_DATA.coins, $=id=>document.getElementById(id);
+let idx=0, face=0, shown=[],tiles=[];
+let renderToken=0, renderTimer=null, safeMode=false;
+const nuevas=new Set((window.NCG_NUEVAS||[]).map(c=>c.id));
+const s=$('sel');
+s.innerHTML=coins.map((c,i)=>`<option value="${i}">${String(i+1).padStart(3,'0')} · ${esc(c.name)}</option>`).join('');
+const FILTERS=[
+ {id:'all',label:'Todo el archivo (129)',fn:()=>true},
+ {id:'revisadas',label:'Redibujos documentados',fn:c=>Boolean(c.referenciasArte)},
+ {id:'new',label:'Solo las 100 nuevas',fn:c=>nuevas.has(c.id)},
+ {id:'es',label:'España y colonias',fn:c=>/España|Virreinato|Nueva España|Monarquía Hispánica|Castilla|Filipinas|Puerto Rico|Nueva Granada/.test(c.origin)},
+ {id:'old',label:'Los 29 tipos originales',fn:c=>!nuevas.has(c.id)},
+ {id:'oro',label:'Oro',fn:c=>c.metal==='oro'},
+ {id:'plata',label:'Plata y metales grises',fn:c=>metalFamilia(c)==='plata'},
+ {id:'cobre',label:'Cobre, bronce y vellón',fn:c=>metalFamilia(c)==='cobre'},
+ {id:'anc',label:'Antiguas y a martillo',fn:c=>!!c.ancient},
+ {id:'hole',label:'Piezas con agujero',fn:c=>!!c.hole}
+];
+const f=$('filter');f.innerHTML=FILTERS.map(x=>`<option value="${x.id}">${x.label}</option>`).join('');
+const thumbnailPath=(coin,side=0,quality='ligera')=>'assets/'+$('coinView').value+'/'+quality+'/'+encodeURIComponent(coin.id)+'_'+(side?'reverso':'anverso')+'.webp';
+// La Galería conserva su propia preferencia de vista.
+const viewKey='ncg_gallery_visual_mode';
+function syncView(){
+ let saved;
+ try{saved=window.parent.NCGDesktop?.readValue?.(viewKey)??localStorage.getItem(viewKey);}catch(_e){}
+ try{if(saved&&saved.startsWith('\"'))saved=JSON.parse(saved);}catch(_e){}
+ $('coinView').value=saved==='realista'?'realista':'vectorial';
+}
+syncView();
+$('coinView').addEventListener('change',()=>{
+ const selected=$('coinView').value;
+ try{localStorage.setItem(viewKey,selected);}catch(_e){}
+ try{window.parent.NCGDesktop?.queueWrite?.(viewKey,JSON.stringify(selected));}catch(_e){}
+ tiles.forEach((tile,i)=>{
+  const img=tile.querySelector('img');
+  img.style.display='';tile.removeAttribute('title');
+  img.src=thumbnailPath(coins[shown[i]]);
+ });
+ redraw();
+});
+
+function currentShader(){
+ const mode=$('coinView').value;
+ const gain=NCGShaders.PRESETS[$('gradePreset').value]?.specularGain;
+ return {
+ mode, specularGain:mode==='vectorial'?(gain??1.65)*.62:gain,
+ metallic:mode==='vectorial'?.48:undefined,textureBoost:mode==='vectorial'?.22:undefined,
+ wearLevel:Number($('wear').value)/100,grime:Number($('grime').value)/100,
+ lustre:Number($('lustre').value)/100,patinaStrength:Number($('patina').value)/100,
+ lightAngle:Number($('lightAngle').value)
+};}
+function setStatus(message){$('previewStatus').textContent=message;}
+function renderSelected(token){
+ if(token!==renderToken||safeMode)return;
+ const coin=coins[idx],side=face,shader=currentShader();
+ (shader.mode==='vectorial'?window.NCGClassic:NCGMonedas).cargarCara(coin,side).then(()=>{
+  // Evita dibujar decenas de estados intermedios al mover un regulador.
+  if(token!==renderToken||safeMode)return;
+  requestAnimationFrame(()=>{
+   if(token!==renderToken||safeMode)return;
+   const canvas=$('coin'),ctx=canvas.getContext('2d');
+   try{
+    ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+    NCGVector.render(ctx,coin,side,shader,shader.mode==='realista'&&$('imageQuality').value==='alta'?'high':'low');
+    const damage=$('damage').value;
+    if(damage){ctx.save();try{ctx.globalCompositeOperation='source-atop';NCGVector.renderDefect(ctx,{name:damage,x:0,y:0,rot:-14,size:1.1,opacity:.9},coin.metal);}finally{ctx.restore();}}
+    if(token!==renderToken||safeMode)return;
+    canvas.style.display='block';$('coinWrap').dataset.vista='vector';setStatus(shader.mode==='vectorial'?'Cuño clásico interactivo':'Grabado realista interactivo');
+   }catch(error){
+    canvas.style.display='none';$('coinWrap').dataset.vista='imagen';setStatus('Se muestra la imagen local: '+String(error?.message||error).slice(0,120));
+    
+   }
+  });
+ }).catch(error=>{
+  if(token!==renderToken)return;
+  $('coin').style.display='none';$('coinWrap').dataset.vista='imagen';setStatus('Imagen local disponible. El dibujo vectorial no pudo cargarse.');
+  
+ });
+}
+function redraw(){
+ const token=++renderToken, coin=coins[idx],side=face;
+ clearTimeout(renderTimer);renderTimer=null;
+ const wrapper=$('coinWrap'), image=$('previewStill'), cv=$('coin');
+ const resource=thumbnailPath(coin,side,$('imageQuality').value);
+ const keepCanvas=!safeMode && wrapper.dataset.cara===resource && wrapper.dataset.vista==='vector';
+ image.onerror=()=>{
+  if(token===renderToken && wrapper.dataset.vista==='imagen')setStatus('La imagen local no está disponible para esta cara.');
+ };
+ if(wrapper.dataset.cara!==resource){
+  wrapper.dataset.cara=resource;
+  image.src=resource;
+ }
+ if(!keepCanvas){
+  wrapper.dataset.vista='imagen';
+  cv.style.display='none';
+ }
+ const shader=currentShader();
+ $('coinTitle').textContent=coin.name;
+ $('dateInfo').textContent=`${coin.origin} · ${coin.year} · ${side?'Reverso':'Anverso'} · ${(coin.metalLabel||coin.metal)} · ${coin.mass} g · ${coin.diameter} mm · ${coin.historicalReview==='tipo_contrastado'?'Motivos cotejados (cuño estilizado)':'Tipo estilizado'}`;
+ const referencia=coin.referenciasArte?.[side?'reverso':'anverso'];
+ const info=$('dateInfo');
+ if(referencia){info.append(document.createElement('br'),referencia.nota);}
+ const url=referencia?.url || coin.historicalSource;
+ if(/^https?:\/\//i.test(url||'')){
+  const enlace=document.createElement('a');
+  enlace.textContent=referencia?'Referencia del dibujo':'Referencia del tipo';
+  enlace.href=url; enlace.target='_blank';enlace.rel='noopener noreferrer';
+  enlace.style.color='#ebcea1';info.append(' · ',enlace);
+ }
+ $('typeLabel').textContent=side?'CARA 2 · REVERSO':'CARA 1 · ANVERSO';
+ $('wearVal').textContent=Math.round(shader.wearLevel*100)+' %';
+ $('grimeVal').textContent=Math.round(shader.grime*100)+' %';
+ $('lustreVal').textContent=Math.round(shader.lustre*100)+' %';
+ $('patinaVal').textContent=Math.round(shader.patinaStrength*100)+' %';
+ $('lightVal').textContent=shader.lightAngle+'°';
+ $('count').textContent=String(idx+1).padStart(3,'0')+' / '+coins.length;
+ s.value=idx;
+ tiles.forEach((tile,i)=>tile.classList.toggle('active',shown[i]===idx));
+ if(safeMode){setStatus('Modo ligero: imagen local sin desgaste interactivo.');return;}
+ if(!keepCanvas)setStatus('Vista local lista. Preparando únicamente el dibujo seleccionado…');
+ // La espera permite pintar la imagen local y agrupa desplazamientos rápidos.
+ renderTimer=setTimeout(()=>renderSelected(token),180);
+}
+function build(){
+ const fl=FILTERS.find(x=>x.id===f.value)||FILTERS[0];
+ const gallery=$('gallery'),fragment=document.createDocumentFragment();
+ shown=[];tiles=[];
+ for(let i=0;i<coins.length;i++){
+  const coin=coins[i];if(!fl.fn(coin))continue;
+  shown.push(i);
+  const tile=document.createElement('button');tile.className='tile';tile.type='button';
+  const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.width=92;img.height=92;
+  img.alt='Anverso de '+coin.name;img.src=thumbnailPath(coin,0,'ligera');
+  img.onerror=()=>{img.style.display='none';tile.title='Miniatura no disponible';};
+  tile.appendChild(img);
+  const name=document.createElement('span');name.textContent=coin.name;tile.appendChild(name);
+  tile.addEventListener('click',event=>{
+   idx=i;
+   face=0;
+   redraw();
+   if(event.detail>0 && window.matchMedia('(max-width:839px)').matches)$('coinPreview').scrollIntoView({block:'start'});
+  });
+  fragment.appendChild(tile);tiles.push(tile);
+ }
+ gallery.replaceChildren(fragment);
+ $('filterCount').textContent=shown.length+' tipos';
+ if(!shown.includes(idx)&&shown.length){
+  idx=shown[0];
+  face=0;
+ }
+ redraw();
+}
+$('safeMode').onclick=()=>{
+ safeMode=!safeMode;
+ $('safeMode').textContent='Solo imagen: '+(safeMode?'Sí':'No');
+ $('safeMode').setAttribute('aria-pressed',String(safeMode));
+ redraw();
+};
+f.onchange=build;s.onchange=()=>{idx=Number(s.value);face=0;redraw();};
+for(const id of ['wear','grime','lustre','patina','lightAngle'])$(id).oninput=()=>{$('gradePreset').value='custom';redraw();};
+$('damage').onchange=redraw;
+$('imageQuality').onchange=redraw;
+$('gradePreset').onchange=()=>{
+ const preset=NCGShaders.PRESETS[$('gradePreset').value];if(!preset)return;
+ for(const [id,v] of Object.entries({wear:preset.wearLevel,grime:preset.grime,lustre:preset.lustre,patina:preset.patinaStrength}))$(id).value=Math.round(v*100);
+ redraw();
+};
+$('flip').onclick=()=>{face=1-face;redraw();};
+$('random').onclick=()=>{const pool=shown.length?shown:coins.map((c,i)=>i);idx=pool[Math.floor(Math.random()*pool.length)];face=0;redraw();};
+document.querySelectorAll('.preset').forEach(b=>b.onclick=()=>{$('wear').value=b.dataset.w;$('gradePreset').value='custom';redraw();});
+const solicitada=Number(new URLSearchParams(location.search).get('moneda'));
+if(Number.isInteger(solicitada) && solicitada>=1 && solicitada<=coins.length) idx=solicitada-1;
+build();
+})().catch(e=>{document.getElementById('previewStatus').textContent='Error al leer el catálogo: '+e.message;});
+</script></body></html>

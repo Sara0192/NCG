@@ -1,0 +1,37 @@
+name: NCG - auditoria y compilacion Windows
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: fuentes_lanzador_windows/go.mod
+          cache: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Compilar lanzador Windows x64 desde Go
+        shell: bash
+        run: |
+          cd fuentes_lanzador_windows
+          go test ./...
+          go vet ./...
+          GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -trimpath -buildvcs=false -ldflags='-H=windowsgui -s -w' -o ../NCG_V18_36_15.exe .
+      - name: Auditoria funcional (incluye el inventario de monedas)
+        run: python3 tests/auditar.py
+      - name: Comprobar formato Windows PE x64
+        run: python3 scripts/verificar_pe.py NCG_V18_36_15.exe
+      - name: Guardar compilacion SIN FIRMA (solo uso de desarrollo)
+        uses: actions/upload-artifact@v7
+        with:
+          name: NCG-Windows-unsigned-ci
+          path: NCG_V18_36_15.exe
+          if-no-files-found: error

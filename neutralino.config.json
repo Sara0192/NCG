@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
+  "applicationId": "app.ncg.gabinete",
+  "applicationName": "NCG — El gabinete de certificación",
+  "version": "1.0.25",
+  "defaultMode": "window",
+  "port": 0,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": false,
+    "writeToLogFile": false
+  },
+  "dataLocation": "system",
+  "storageLocation": "system",
+  "nativeAllowList": [
+    "filesystem.createDirectory",
+    "filesystem.readDirectory",
+    "filesystem.readFile",
+    "filesystem.writeFile",
+    "app.exit",
+    "events.on",
+    "filesystem.move",
+    "filesystem.remove"
+  ],
+  "filesystemScopes": {
+    "${NL_OSDATAPATH}": "read-write"
+  },
+  "modes": {
+    "window": {
+      "title": "NCG — El gabinete de certificación",
+      "icon": "/resources/assets/desktop.png",
+      "width": 1560,
+      "height": 920,
+      "minWidth": 1050,
+      "minHeight": 650,
+      "maximize": true,
+      "resizable": true,
+      "enableInspector": false,
+      "injectClientLibrary": false,
+      "injectGlobals": false,
+      "useSavedState": false,
+      "newWindowPolicy": "browser",
+      "openInspectorOnStartup": false,
+      "exitProcessOnClose": true
+    }
+  },
+  "cli": {
+    "binaryName": "NCG",
+    "resourcesPath": "/resources/",
+    "resourcesExclude": [
+      "**/__pycache__/**"
+    ],
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/js/neutralino.js",
+    "binaryVersion": "6.10.0",
+    "clientVersion": "6.10.0"
+  }
+}

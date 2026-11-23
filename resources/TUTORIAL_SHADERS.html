@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCG — Laboratorio de shaders y conservación</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,Segoe UI,sans-serif;background:#111c19;color:#e9e3d5}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 16% -20%,#294238,#101917 65%);min-height:100vh}
+a{color:#edca89}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ecd09b;outline-offset:2px}
+header{border-bottom:1px solid #425449;padding:23px clamp(18px,4vw,58px);display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.kicker{text-transform:uppercase;letter-spacing:.18em;color:#d1b37d;font-size:11px;font-weight:700}h1{font:normal clamp(27px,3.1vw,43px) Georgia,serif;margin:7px 0}header p{margin:0;color:#b9c0b4;max-width:720px;font-size:14px;line-height:1.5}nav{display:flex;gap:16px;font-size:13px}
+main{max-width:1510px;margin:auto;padding:24px clamp(16px,3vw,38px);display:grid;grid-template-columns:minmax(420px,1.15fr) minmax(340px,.85fr);gap:22px}
+.card{background:#17241f;border:1px solid #45574a;border-radius:14px;padding:20px;min-width:0}.card h2{font:normal 23px Georgia,serif;margin:0 0 12px;color:#efdfc1}.muted{color:#aeb9aa;font-size:12px;line-height:1.6}
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.coinpane{background:#101b18;border:1px solid #37493e;border-radius:12px;padding:12px;text-align:center}.coinpane b{display:block;font-size:12px;color:#e9d2a5;margin-bottom:5px}.coinpane small{display:block;color:#9ead9f;min-height:20px}.coinpane canvas{width:100%;height:auto;aspect-ratio:1;display:block}
+.line{height:1px;background:#374c40;margin:20px 0}.toolbar{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0}button,select{background:#2f4539;color:#f4e7cb;border:1px solid #6b7b64;border-radius:7px;padding:10px 13px;font:inherit;font-size:13px;cursor:pointer}button:hover,select:hover{border-color:#f0c587}button.primary{background:#cba970;color:#20231b;border-color:#e8c788;font-weight:700}button[aria-pressed=true]{background:#806942;border-color:#e7c285;color:#fff}select{width:100%;min-width:0}
+label{display:block;font-size:12px;color:#c4cabb;margin:12px 0 5px}.sliderTitle{display:flex;justify-content:space-between;gap:12px}input[type=range]{width:100%;accent-color:#dfbc7d;cursor:pointer}fieldset{border:1px solid #43574b;border-radius:9px;padding:10px 12px;margin-top:15px}legend{color:#e9d7ae;font-size:13px;padding:0 7px}.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.checks label{display:flex;gap:8px;align-items:center;margin:0;cursor:pointer}.checks input{accent-color:#dbbb87}
+.gradebuttons{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin:9px 0 17px}.gradebuttons button{padding:8px 3px;font-size:12px}.help{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.help article{padding:15px;background:#1c2d25;border:1px solid #344a3b;border-radius:10px}.help h3{font:normal 19px Georgia,serif;color:#edd6a4;margin:0 0 7px}.help p{font-size:13px;line-height:1.55;color:#c6cdc1;margin:0}.help em{font-style:normal;color:#f3dab1}.notes{background:#27362b;border-left:3px solid #d9ba82;padding:15px 18px;line-height:1.6;color:#dedacb;font-size:13px;border-radius:5px}
+footer{max-width:1510px;padding:12px 38px 32px;margin:auto;color:#9bb0a0;font-size:12px;line-height:1.6}#status{min-height:24px;color:#d5b27b;font-size:13px}
+@media(max-width:980px){main{grid-template-columns:1fr}.help{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){main{padding:12px;gap:12px}.card{padding:13px}.compare{gap:6px}.coinpane{padding:4px}.help{grid-template-columns:1fr}.gradebuttons{gap:4px}.gradebuttons button{padding:8px 2px;font-size:11px}}
+
+.curtain-wrap{max-width:720px;margin:16px auto;background:#101b18;border:1px solid #64725f;border-radius:14px;padding:16px;text-align:center}
+.curtain-wrap>canvas:not([hidden]){display:block;max-width:660px;width:min(100%,66vh);height:auto;margin:7px auto 10px;touch-action:none;border-radius:10px;cursor:ew-resize}
+.curtain-wrap canvas[hidden]{display:none!important}
+.curtain-labels{display:flex;justify-content:space-between;gap:9px;color:#edce92;font:700 12px system-ui,sans-serif;letter-spacing:.06em}
+.curtain-control{display:flex;justify-content:space-between;margin-top:10px;font-weight:700}
+#caption{display:block;margin-top:11px}
+.edge-demo{padding:8px 8px 14px;text-align:left}
+#edgeDemo[hidden],.curtain-labels[hidden],.curtain-control[hidden],input[hidden],button[hidden]{display:none!important}
+#edgeCanvas{width:100%;height:auto;display:block;max-width:660px;margin:0 auto 4px;touch-action:pan-y}
+.edge-description{border:1px solid #596d5a;background:#152d23;padding:11px 13px;border-radius:9px;color:#e3decf;font-size:13px;line-height:1.5;min-height:50px}
+.edge-rotation{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;margin-top:9px}
+.edge-rotation input{margin:0}
+.edge-rotation button{min-width:66px}
+.edge-angles{display:flex;justify-content:space-between;color:#efce8e;font-size:12px;font-weight:700;margin-top:8px}
+#viewEdge[aria-pressed=true]{background:#806942;color:#fff;border-color:#e7c285}
+@media(max-width:520px){.edge-rotation button{min-width:0;padding:9px 6px}}
+
+/* V18.3 — taller de comparación acústica: controles independientes del motor de vídeo */
+.sound-lab{max-width:1510px;margin:0 auto 22px;padding:20px clamp(16px,3vw,38px)}
+.sound-lab h2{font:normal 27px Georgia,serif;color:#efdfc1;margin:0 0 7px}
+.sound-lab .hint{color:#bfcbbe;font-size:13px;line-height:1.55;max-width:1000px;margin:0 0 16px}
+.sound-matrix{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.sound-metal{background:#102019;border:1px solid #516352;border-radius:12px;padding:15px;min-width:0}
+.sound-metal h3{font:normal 21px Georgia,serif;margin:0 0 5px;color:#f0debb}
+.sound-metal p{color:#b8c8bb;font-size:12px;margin:0 0 12px;line-height:1.45}
+.sound-samples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.sound-samples button{font-size:12px;line-height:1.3;min-height:47px;padding:8px 9px;text-align:left;white-space:normal}
+.sound-samples button[data-case=authentic]{grid-column:1/-1;background:#254539;border-color:#bda677}
+.sound-samples button[aria-pressed=true]{background:#806942;color:#fff;border:2px solid #f0cf8f}
+.sound-panel{border:1px solid #657862;border-radius:10px;background:#142b23;padding:16px;margin-top:15px}
+.sound-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.sound-actions button{font-weight:600}
+.sound-pick{color:#efd39d;margin-bottom:9px;font-weight:700;font-size:13px}
+#soundReadout{color:#e7ebe2;font-size:13px;line-height:1.55;min-height:52px;margin-top:12px}
+.sound-meters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:12px}
+.sound-meters label{margin:0;color:#e1dac7}.sound-meters meter{display:block;width:100%;height:14px;accent-color:#dbc08c}
+.sound-volume{display:flex;align-items:center;gap:9px;margin-left:auto}.sound-volume label{white-space:nowrap;margin:0}.sound-volume input{width:140px}
+.sound-warning{padding:11px 14px;margin-top:14px;border-left:3px solid #d2ad75;background:#273629;border-radius:5px;font-size:12px;line-height:1.5;color:#dedacb}
+@media(max-width:870px){.sound-matrix{grid-template-columns:1fr}.sound-samples{grid-template-columns:repeat(4,minmax(0,1fr))}.sound-samples button[data-case=authentic]{grid-column:auto}}
+@media(max-width:600px){.sound-samples{grid-template-columns:repeat(2,minmax(0,1fr))}.sound-samples button[data-case=authentic]{grid-column:1/-1}.sound-meters{grid-template-columns:1fr}.sound-volume{width:100%;margin:4px 0 0}}
+</style></head><body>
+<header><div><div class="kicker">NCG · Centro de formación · V18.3</div><h1>Laboratorio de shaders</h1><p>Aprende cómo un mismo dibujo vectorial puede representar oro, plata o cobre, y cómo cambian el relieve, el brillo, la pátina y el desgaste con su conservación.</p></div><nav><a href="index.html">Volver al gabinete</a><a href="GALERIA_VECTORIAL.html">Galería de 129 monedas</a><a href="#soundLab">♪ Sonidos</a></nav></header>
+<main>
+<section class="card"><h2 id="labHeading">Comparador antes / después</h2><p id="labIntro" class="muted">Desliza la cortina: el lado izquierdo muestra el motor base; el derecho, la misma moneda con shaders y luz. La geometría y el desgaste son idénticos. Son efectos calculados por el navegador, sin fotos.</p>
+<div class="curtain-wrap"><div class="curtain-labels"><span>MOTOR BASE</span><span>SHADERS ACTIVOS</span></div>
+ <canvas id="compareCanvas" width="660" height="660" role="img" aria-label="La misma moneda dividida por una cortina móvil entre motor base y shaders"></canvas>
+ <canvas id="before" width="660" height="660" hidden></canvas><canvas id="after" width="660" height="660" hidden></canvas>
+ <label for="curtainRange" class="curtain-control">Cortina de comparación <output id="curtainOut">50 %</output></label>
+ <input id="curtainRange" type="range" min="0" max="100" value="50" aria-label="Mover cortina comparativa del antes y después">
+ <small id="caption" class="muted">Metal y conservación simulados</small>
+ <div id="edgeDemo" class="edge-demo" hidden>
+  <div class="curtain-labels"><span>VISTA LATERAL DEL CANTO</span><span id="edgeDegree">Giro 118° / 360°</span></div>
+  <canvas id="edgeCanvas" width="660" height="240" role="img" aria-label="Canto lateral de la moneda: muestra cordoncillo, estrías, leyendas y posibles defectos"></canvas>
+  <div class="edge-rotation"><button id="edgePrev" type="button" aria-label="Girar canto 15 grados a la izquierda">◀ 15°</button><input id="edgeRange" type="range" min="0" max="360" step="1" value="118" aria-label="Girar la moneda para examinar todo el canto"><button id="edgeNext" type="button" aria-label="Girar canto 15 grados a la derecha">15° ▶</button></div>
+  <div class="edge-angles"><span id="edgeKind">Canto de la moneda</span><span>360° · arrastra para buscar defectos</span></div>
+  <p id="edgeInfo" class="edge-description" role="status" aria-live="polite"></p>
+ </div></div>
+<div class="toolbar"><button id="flip" class="primary">Girar anverso / reverso</button><button id="viewEdge" type="button" aria-pressed="false">⊙ Ver canto</button><button id="reset">Restablecer</button><button id="random">Moneda aleatoria</button></div>
+<p id="status" role="status" aria-live="polite"></p><div class="notes"><b>Importante para jugar:</b> aquí puedes conocer y forzar todos los efectos. Durante una jornada, NCG <b>no revela el grado verdadero</b> ni si una moneda tiene Details: tendrás que deducirlo mirando la pieza y utilizando las herramientas del gabinete.</div>
+<div class="line"></div><h2>¿Qué hace cada shader?</h2><div class="help">
+<article><h3>01 · Metal</h3><p>El <em>shader de material</em> combina tonos cálidos en oro, blancos fríos en plata y rojizos en cobre. La reflectividad también cambia entre metales.</p></article>
+<article><h3>02 · Relieve</h3><p>Sombras y destellos sobre los <em>contornos vectoriales acuñados</em>. La luz rasante ayuda a distinguir letras, bustos y escudos altos.</p></article>
+<article><h3>03 · Luz y lustre</h3><p>Un haz especular simula el brillo metálico y el efecto radial de acuñación. Al gastarse la superficie, el lustre suele perder intensidad.</p></article>
+<article><h3>04 · Desgaste</h3><p>El motor borra y suaviza partes de los <em>altos del relieve</em>, reduce líneas finas y debilita el brillo. No consiste simplemente en oscurecer la moneda.</p></article>
+<article><h3>05 · Pátina</h3><p>Oscurecimiento y variaciones periféricas de tono. La plata puede adquirir tonos grises; el cobre se oscurece y puede formar depósitos. No toda pátina es un defecto.</p></article>
+<article><h3>06 · Microtextura</h3><p>Grano y variación de reflectividad sutiles. Es una textura procedimental y estable: al girar la moneda no se genera ruido distinto.</p></article>
+<article><h3>07 · Contacto</h3><p>Pequeñas marcas normales de manipulación. Son distintas de los defectos severos clasificados como Details; por sí solas no implican limpieza.</p></article>
+<article><h3>08 · Details</h3><p>Perforaciones, limpieza agresiva, corrosión, reparación, grafiti y golpes importantes se dibujan en una capa distinta y visible.</p></article>
+</div></section>
+<aside class="card"><h2>Experimenta con los parámetros</h2>
+<label for="coinSel">Moneda histórica</label><select id="coinSel"></select><div class="toolbar" style="margin:7px 0"><small class="muted" id="coinInfo"></small></div>
+<label for="labView">Vista de la moneda</label><select id="labView"><option value="realista">Compleja · realista</option><option value="vectorial">Simple · vectorial</option></select>
+<label for="metal">Material visual</label><select id="metal"><option value="real">Original del catálogo</option><option value="oro">Oro (demostración)</option><option value="plata">Plata (demostración)</option><option value="cobre">Cobre / bronce (demostración)</option></select>
+<label>Conservación orientativa</label><div class="gradebuttons" id="grades"><button data-grade="FDC" aria-pressed="false">FDC</button><button data-grade="SC" aria-pressed="false">SC</button><button data-grade="EBC" aria-pressed="false">EBC</button><button data-grade="MBC" aria-pressed="false">MBC</button><button data-grade="BC" aria-pressed="false">BC</button></div>
+<p class="muted" id="gradeNote">Los grados son aproximaciones artísticas. Una moneda antigua puede tener acuñación débil sin estar muy circulada.</p>
+<div id="sliders">
+<label class="sliderTitle" for="wear">Pérdida de relieve <output id="wearOut">—</output></label><input id="wear" type="range" min="0" max="100" value="28">
+<label class="sliderTitle" for="lustre">Lustre / brillo original <output id="lustreOut">—</output></label><input id="lustre" type="range" min="0" max="100" value="52">
+<label class="sliderTitle" for="patina">Pátina / tonificación <output id="patinaOut">—</output></label><input id="patina" type="range" min="0" max="100" value="24">
+<label class="sliderTitle" for="grime">Suciedad de superficie <output id="grimeOut">—</output></label><input id="grime" type="range" min="0" max="65" value="12">
+<label class="sliderTitle" for="texture">Microtextura <output id="textureOut">—</output></label><input id="texture" type="range" min="0" max="100" value="38">
+<label class="sliderTitle" for="metallic">Intensidad metálica <output id="metallicOut">—</output></label><input id="metallic" type="range" min="0" max="100" value="76">
+<label class="sliderTitle" for="specular">Brillo especular <output id="specularOut">—</output></label><input id="specular" type="range" min="0" max="500" value="440">
+<label class="sliderTitle" for="angle">Ángulo de luz <output id="angleOut">—</output></label><input id="angle" type="range" min="-180" max="180" value="-48">
+</div>
+<fieldset><legend>Activar y desactivar cada capa</legend><div class="checks"><label><input type="checkbox" data-fx="relief" checked> Relieve</label><label><input type="checkbox" data-fx="light" checked> Luz y lustre</label><label><input type="checkbox" data-fx="patina" checked> Pátina</label><label><input type="checkbox" data-fx="texture" checked> Microtextura</label><label><input type="checkbox" data-fx="contact" checked> Contacto</label></div></fieldset>
+<label for="defect">Defecto de prueba (no cambia el catálogo)</label><select id="defect"><option value="">Ninguno</option><optgroup label="Defectos de las caras"><option value="limpieza_paralela">Limpieza agresiva</option><option value="rayas_cruzadas">Rayas profundas</option><option value="corrosion_plata">Corrosión</option><option value="poros_fundicion">Porosidad</option><option value="perforacion">Perforación</option><option value="reparacion">Reparación</option><option value="graffiti">Grafiti</option></optgroup><optgroup label="Defectos del canto — visibles al girar"><option value="golpe_canto">Golpe de canto</option><option value="limado_canto">Canto limado</option><option value="recortado_canto">Canto recortado / cercenado</option><option value="rayas_canto">Rayas profundas de canto</option><option value="costura_canto">Costura / unión en el canto</option><option value="desgaste_canto">Cordoncillo gastado</option></optgroup></select>
+<p class="muted" style="margin:7px 0 0">Los daños del canto se examinan en «⊙ Ver canto». Gira la moneda: el defecto no aparece desde todos los ángulos. Es una demostración independiente de la partida.</p>
+<div class="notes" style="margin-top:18px"><b>Sobre la tecnología:</b> el juego emplea <b>shaders procedimentales en Canvas 2D</b> (gradientes, máscaras, composición e iluminación falsa), no shaders GLSL ejecutados por WebGL. Esta decisión mantiene el proyecto ligero y compatible con archivos locales.</div>
+</aside></main>
+
+<section id="soundLab" class="card sound-lab" aria-labelledby="soundTitle">
+ <h2 id="soundTitle">♪ Laboratorio de sonido · oro, plata y cobre</h2>
+ <p class="hint">Escucha el toque simulado de tres metales y compara ejemplares auténticos con distintas falsificaciones. Son sonidos generados por NCG; <strong>no son grabaciones reales</strong> ni garantizan identificar una moneda falsa.</p>
+ <div class="sound-matrix" id="soundMatrix">
+  <section class="sound-metal" data-metal-card="oro"><h3>Oro</h3><p>Resonancia cálida y generalmente menos aguda que la plata en este ejemplo.</p><div class="sound-samples"></div></section>
+  <section class="sound-metal" data-metal-card="plata"><h3>Plata</h3><p>Sonido agudo y sostenido en determinados tipos acuñados.</p><div class="sound-samples"></div></section>
+  <section class="sound-metal" data-metal-card="cobre"><h3>Cobre</h3><p>Respuesta normalmente más grave o amortiguada en esta simulación.</p><div class="sound-samples"></div></section>
+ </div>
+ <div class="sound-panel">
+  <div class="sound-pick" id="soundSelected">Plata · Auténtica (referencia)</div>
+  <div class="sound-actions">
+   <button id="soundPlay" type="button" class="primary">♪ Escuchar variante</button>
+   <button id="soundCompare" type="button">♫ Comparar: referencia → variante</button>
+   <div class="sound-volume"><label for="soundLabVolume">Volumen</label><input type="range" min="0" max="100" value="58" step="1" id="soundLabVolume"><output id="soundLabVolOut" for="soundLabVolume">58 %</output></div>
+  </div>
+  <div id="soundReadout" role="status" aria-live="polite">Selecciona un metal y una variante para escucharla.</div>
+  <div class="sound-meters"><label for="soundDecayMeter">Duración aproximada del timbre <meter id="soundDecayMeter" min="0" max="1.4" value="0.9"></meter></label><label for="soundToneMeter">Tono relativo <meter id="soundToneMeter" min="250" max="1250" value="810"></meter></label></div>
+ </div>
+ <p class="sound-warning"><b>Interpretación numismática:</b> el toque depende del diámetro, grosor, aleación, forma de sujeción, daños y temperatura. Una auténtica agrietada puede sonar apagada; una falsificación bien hecha puede sonar muy convincente. La plata no tiene un único tono universal. Esta actividad es orientativa y no modifica tu partida ni revela los expedientes.</p>
+</section>
+<footer>El tutorial enseña principios visuales. FDC, SC, EBC, MBC y BC no se corresponden punto por punto con todos los grados Sheldon o Ancients. La pátina, la limpieza y la conservación requieren evaluación real de cada pieza. NCG es un simulador, no un dictamen profesional.</footer>
+<script src="js/trazos.js"></script><script src="datos/indice_monedas.js"></script><script src="js/tutorial_canto.js"></script><script src="js/metales.js"></script><script src="js/shaders_monedas.js"></script><script src="js/vector_monedas.js"></script><script src="js/arte_cunhos_individuales.js"></script><script src="js/cunhos_v1817.js"></script><script src="js/cargador_monedas.js"></script><script src="assets/vectorial/motor-clasico.js"></script>
+<script>
+(()=>{
+ 'use strict';
+ const $=id=>document.getElementById(id),coins=window.GAME_DATA.coins;
+ let index=0,side=0,token=0,scheduled=0,edgeMode=false,edgeScheduled=0,edgeAngle=118;
+ const EDGE_DEFECTS=new Set(['golpe_canto','limado_canto','recortado_canto','rayas_canto','costura_canto','desgaste_canto']);
+ function scheduleEdge(){if(edgeScheduled)return;edgeScheduled=requestAnimationFrame(()=>{edgeScheduled=0;drawEdge();});}
+ function drawEdge(){
+  if(!edgeMode)return;
+  sliders.forEach(id=>{$(id+'Out').textContent=$(id).value+(id==='angle'?'°':' %');});
+  const c=coins[index],metal=$('metal').value==='real'?paletaMoneda(c):$('metal').value;
+  const angle=Number($('edgeRange').value);
+  $('edgeDegree').textContent='Giro '+angle+'° / 360°';
+  $('edgeKind').textContent=c.edgeLabel||'Canto '+(c.edgeType||'liso');
+  const state=NCGEdgeLab.draw($('edgeCanvas'),c,{angle,metal,defect:$('defect').value,wear:Number($('wear').value)/100,lightAngle:Number($('angle').value)});
+  $('edgeInfo').textContent=state.description;
+  $('coinInfo').textContent=c.origin+' · '+c.year+' · canto';
+ }
+ function setEdgeMode(active){
+  edgeMode=!!active;token++; // cancela un render pendiente si cambiamos a la vista ligera
+  $('edgeDemo').hidden=!edgeMode;
+  $('compareCanvas').hidden=edgeMode;
+  $('curtainRange').hidden=edgeMode;
+  document.querySelector('.curtain-wrap > .curtain-labels').hidden=edgeMode;
+  document.querySelector('.curtain-control').hidden=edgeMode;
+  $('viewEdge').setAttribute('aria-pressed',String(edgeMode));
+  $('viewEdge').textContent=edgeMode?'◉ Volver a anverso / reverso':'⊙ Ver canto';
+  $('flip').hidden=edgeMode;
+  $('labHeading').textContent=edgeMode?'Examen del canto · 360°':'Comparador antes / después';
+  $('labIntro').textContent=edgeMode?'Gira la moneda para descubrir estrías, cordoncillos, leyendas y daños de canto. El defecto permanece en un ángulo fijo: no lo verás en todas las posiciones.':
+  'Desliza la cortina: el lado izquierdo muestra el motor base; el derecho, la misma moneda con shaders y luz. La geometría y el desgaste son idénticos. Son efectos calculados por el navegador, sin fotos.';
+  if(edgeMode){$('caption').textContent='Vista lateral independiente · rota 360° para examinar el canto';scheduleEdge();}
+  else schedule();
+ }
+
+ const viewKey='ncg_shader_visual_mode';
+ try{let saved=window.parent.NCGDesktop?.readValue?.(viewKey)??localStorage.getItem(viewKey);try{saved=JSON.parse(saved)}catch(_e){}$('labView').value=saved==='vectorial'?'vectorial':'realista';}catch(_e){}
+ $('labView').onchange=()=>{const value=$('labView').value;try{localStorage.setItem(viewKey,value);}catch(_e){}try{window.parent.NCGDesktop?.queueWrite?.(viewKey,JSON.stringify(value));}catch(_e){}schedule();};
+ const sliders=['wear','lustre','patina','grime','texture','metallic','specular','angle'];
+ $('coinSel').innerHTML=coins.map((c,i)=>`<option value="${i}">${String(i+1).padStart(3,'0')} · ${c.name.replace(/</g,'&lt;')}</option>`).join('');
+ function grade(g){const p=NCGShaders.PRESETS[g];for(const [id,value] of Object.entries({wear:p.wearLevel,lustre:p.lustre,patina:p.patinaStrength,grime:p.grime,texture:p.texture}))$(id).value=Math.round(value*100);$('metallic').value=95;$('specular').value=Math.round(p.specularGain*100);pick(g);schedule();}
+ function pick(g){document.querySelectorAll('#grades button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.grade===g)));}
+ function schedule(){if(edgeMode){scheduleEdge();return;}if(scheduled)return;scheduled=requestAnimationFrame(()=>{scheduled=0;draw();});}
+ function loading(msg){for(const id of ['before','after','compareCanvas']){const cv=$(id),ctx=cv.getContext('2d');ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle='#1b3029';ctx.fillRect(0,0,cv.width,cv.height);ctx.fillStyle='#cfb88b';ctx.font='18px Georgia';ctx.textAlign='center';ctx.fillText(msg,cv.width/2,cv.height/2);}}
+ function paintCurtain(){
+  const dest=$('compareCanvas'),ctx=dest.getContext('2d'),left=$('before'),right=$('after');
+  const x=Math.round(dest.width*Number($('curtainRange').value)/100);
+  ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,dest.width,dest.height);
+  ctx.save();ctx.beginPath();ctx.rect(0,0,x,dest.height);ctx.clip();ctx.drawImage(left,0,0);ctx.restore();
+  ctx.save();ctx.beginPath();ctx.rect(x,0,dest.width-x,dest.height);ctx.clip();ctx.drawImage(right,0,0);ctx.restore();
+  ctx.lineWidth=5;ctx.strokeStyle='#181e1c';ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,dest.height);ctx.stroke();
+  ctx.lineWidth=2.5;ctx.strokeStyle='#f9d38e';ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,dest.height);ctx.stroke();
+  ctx.fillStyle='#f9d38e';ctx.beginPath();ctx.roundRect(x-19,dest.height/2-34,38,68,12);ctx.fill();
+  ctx.strokeStyle='#283b34';ctx.lineWidth=2.5;
+  for(const d of [-6,0,6]){ctx.beginPath();ctx.moveTo(x+d,dest.height/2-11);ctx.lineTo(x+d,dest.height/2+11);ctx.stroke();}
+  $('curtainOut').textContent=$('curtainRange').value+' %';
+ }
+ $('curtainRange').oninput=paintCurtain;
+ $('compareCanvas').addEventListener('pointerdown',e=>{e.currentTarget.setPointerCapture(e.pointerId);const r=e.currentTarget.getBoundingClientRect();$('curtainRange').value=Math.max(0,Math.min(100,Math.round((e.clientX-r.left)/r.width*100)));paintCurtain();});
+ $('compareCanvas').addEventListener('pointermove',e=>{if(!e.currentTarget.hasPointerCapture(e.pointerId))return;const r=e.currentTarget.getBoundingClientRect();$('curtainRange').value=Math.max(0,Math.min(100,Math.round((e.clientX-r.left)/r.width*100)));paintCurtain();});
+ async function draw(){if(edgeMode)return;const current=++token,c=coins[index],s=side,mode=$('labView').value;
+  $('coinInfo').textContent=c.origin+' · '+c.year+' · '+(s?'reverso':'anverso');
+  $('status').textContent='';sliders.forEach(id=>{$(id+'Out').textContent=$(id).value+(id==='angle'?'°':id==='specular'?' %':' %');});
+  const shader={wearLevel:Number($('wear').value)/100,lustre:Number($('lustre').value)/100,grime:Number($('grime').value)/100,patinaStrength:Number($('patina').value)/100,texture:Number($('texture').value)/100,metallic:Number($('metallic').value)/100,specularGain:Number($('specular').value)/100,lightAngle:Number($('angle').value)};
+  const metal=$('metal').value==='real'?paletaMoneda(c):$('metal').value,coin={...c,metal};
+  try{
+   const models=mode==='vectorial'?NCGClassic:NCGMonedas;
+   if(!models.estaLista(c,s)){loading('Cargando dibujo...');await models.cargarCara(c,s);}
+   if(current!==token)return;
+   for(const [id,fx] of [['before',{all:false}],['after',Object.fromEntries([...document.querySelectorAll('[data-fx]')].map(x=>[x.dataset.fx,x.checked]))]]){
+    const cv=$(id),ctx=cv.getContext('2d');ctx.setTransform(cv.width/860,0,0,cv.height/860,0,0);
+    NCGVector.render(ctx,coin,s,{...shader,mode,fx},'high');
+    if(id==='after'&&$('defect').value&&!EDGE_DEFECTS.has($('defect').value)){ctx.save();ctx.globalCompositeOperation='source-atop';NCGVector.renderDefect(ctx,{name:$('defect').value,x:0,y:0,rot:-14,size:1,opacity:.85},metal);ctx.restore();}
+   }
+   paintCurtain();$('caption').textContent=`${metal.toUpperCase()} · desgaste ${Math.round(shader.wearLevel*100)} % · ${s?'reverso':'anverso'}`;
+  }catch(err){$('status').textContent='Error: '+err.message;}
+ }
+ $('coinSel').onchange=()=>{index=Number($('coinSel').value);side=0;schedule();};
+ $('metal').onchange=schedule;
+ $('defect').onchange=()=>{if(EDGE_DEFECTS.has($('defect').value)){$('edgeRange').value=118;setEdgeMode(true);}else if(edgeMode&&$('defect').value){setEdgeMode(false);}else schedule();};
+ $('viewEdge').onclick=()=>setEdgeMode(!edgeMode);
+ $('edgeRange').oninput=scheduleEdge;
+ $('edgePrev').onclick=()=>{$('edgeRange').value=(Number($('edgeRange').value)+345)%360;scheduleEdge();};
+ $('edgeNext').onclick=()=>{$('edgeRange').value=(Number($('edgeRange').value)+15)%360;scheduleEdge();};
+ $('flip').onclick=()=>{side=1-side;schedule();};
+ $('random').onclick=()=>{index=Math.floor(Math.random()*coins.length);$('coinSel').value=index;side=0;schedule();};
+ $('reset').onclick=()=>{$('metal').value='real';$('defect').value='';$('angle').value=-48;$('edgeRange').value=118;document.querySelectorAll('[data-fx]').forEach(x=>x.checked=true);setEdgeMode(false);grade('EBC');};
+ document.querySelectorAll('#grades button').forEach(b=>b.onclick=()=>grade(b.dataset.grade));
+ for(const id of sliders)$(id).oninput=()=>{pick('');schedule();};
+ document.querySelectorAll('[data-fx]').forEach(b=>b.onchange=schedule);
+ const ex=coins.findIndex(c=>c.id==='8_escudos_Carlos_IV_1806');if(ex>=0){index=ex;$('coinSel').value=ex;}
+ grade('FDC');
+})();
+</script>
+
+<script src="js/sfx.js"></script>
+<script>
+(function(){
+ 'use strict';
+ const $=id=>document.getElementById(id);
+ const metals={oro:{base:585,quality:.67},plata:{base:810,quality:.80},cobre:{base:560,quality:.57}};
+ const cases={
+  authentic:{name:'Auténtica · referencia',shift:0,detune:0,desc:'Metal de referencia, sin defectos estructurales simulados.'},
+  plated:{name:'Falsa · chapada',shift:-.32,detune:1,desc:'La superficie de un metal noble puede ocultar un núcleo distinto; la resonancia puede quedar más apagada.'},
+  cast:{name:'Falsa · fundida',shift:-.35,detune:1,desc:'El material y la estructura simulada amortiguan la vibración. La porosidad no es un diagnóstico suficiente.'},
+  period:{name:'Falsa · de época',shift:-.14,detune:0,desc:'Una falsificación histórica puede ser metalúrgicamente parecida y conservar un sonido bastante plausible.'},
+  subtle:{name:'Falsa · convincente',shift:-.015,detune:0,desc:'Este ejemplo suena casi igual a la auténtica: la prueba de toque por sí sola no puede distinguirlas.'}
+ };
+ const state={metal:'plata',variant:'authentic'};
+ const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+ function sample(metal,kind){
+  const m=metals[metal],v=cases[kind];
+  const q=clamp(m.quality+v.shift,.14,.96);
+  const pitch=kind==='plated'?.89:kind==='cast'?.91:kind==='period'?.98:kind==='subtle'?1.003:1;
+  const hz=Math.round(m.base*pitch);
+  const decay=Math.round((.13+q*1.02)*100)/100;
+  return {hz,decay,brightness:clamp(.18+q*.72,.25,.98),dissonance:!!v.detune};
+ }
+ function setReadout(message=''){
+  const m=state.metal,v=state.variant,info=sample(m,v),data=cases[v];
+  $('soundSelected').textContent=m.charAt(0).toUpperCase()+m.slice(1)+' · '+data.name;
+  $('soundDecayMeter').value=info.decay;
+  $('soundToneMeter').value=info.hz;
+  $('soundReadout').textContent=(message?message+' · ':'')+data.desc+' Simulación: '+info.hz+' Hz; decaimiento '+info.decay.toFixed(2)+' s.';
+  document.querySelectorAll('#soundMatrix button').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.metal===m&&btn.dataset.case===v)));
+ }
+ function play(kind='single'){
+  try{
+   if(!window.NCGSound||!NCGSound.available()){
+    setReadout('Audio WebAudio no disponible en esta ventana');return;
+   }
+   const selected=sample(state.metal,state.variant),ref=sample(state.metal,'authentic');
+   const ok=kind==='compare'?NCGSound.compareRings(ref,selected):NCGSound.play('ring',selected);
+   setReadout(ok?(kind==='compare'?'Referencia y variante reproducidas en secuencia':'Sonido reproducido'):'Sin sonido: activa SFX y comprueba el volumen');
+  }catch(_err){setReadout('El audio no está disponible; la galería de monedas sigue funcionando');}
+ }
+ for(const card of document.querySelectorAll('[data-metal-card]')){
+  const metal=card.dataset.metalCard,container=card.querySelector('.sound-samples');
+  for(const [key,def] of Object.entries(cases)){
+   const b=document.createElement('button');b.type='button';b.dataset.metal=metal;b.dataset.case=key;
+   b.textContent='♪ '+def.name;b.setAttribute('aria-pressed','false');
+   b.addEventListener('click',()=>{state.metal=metal;state.variant=key;setReadout();play();});
+   container.appendChild(b);
+  }
+ }
+ $('soundPlay').addEventListener('click',()=>play());
+ $('soundCompare').addEventListener('click',()=>play('compare'));
+ let saved=58;
+ try{saved=NCGSound.getVolume();}catch(_e){}
+ $('soundLabVolume').value=saved;$('soundLabVolOut').textContent=saved+' %';
+ // Sin escrituras de disco en cada movimiento del deslizador: guardar solo al soltar.
+ $('soundLabVolume').addEventListener('input',()=>{
+  const val=Number($('soundLabVolume').value);
+  $('soundLabVolOut').textContent=val+' %';window.NCGSound?.setVolume(val,false);
+ });
+ $('soundLabVolume').addEventListener('change',()=>window.NCGSound?.setVolume(Number($('soundLabVolume').value),true));
+ setReadout();
+})();
+</script>
+</body></html>
